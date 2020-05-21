@@ -1,9 +1,13 @@
 "use strict"
+
 const fs = require('fs')
+const util = require('util')
 const https = require("https")
 const url = require("url")
 const path = require('path')
+
 const args = process.argv.slice(2)
+
 
 Object.defineProperty(Object.prototype, "define", {
     writable:     false,
@@ -724,6 +728,11 @@ String.prototype.define("slug", function() {
 //         return this.nativeReplace(arguments[0], arguments[1])
 //     }
 // })
+
+
+Number.prototype.define("round", function(places) {
+    return +(Math.round(this + "e+" + places) + "e-" + places);
+})
 Math.random32 = function() {
     return (0x100000000 * Math.random()) | 0;
 }
@@ -819,12 +828,6 @@ String.prototype.define("replace", function() {
         return this.nativeReplace(arguments[0], "")
     }
     return this.nativeReplace(arguments[0], arguments[1])
-})
-global.define("end", function(){
-    process.exit()
-})
-global.define("exit", function(){
-    process.exit()
 })
 Date.define("display", function() {
     let d = new Date()
@@ -969,6 +972,20 @@ const permutations = arr => {
         []
     );
 };
+
+
+Object.prototype.define("print", function() {
+    console.log(util.inspect(this, false, null, true /* enable colors */))
+})
+
+
+
+global.define("end", function(){
+    process.exit()
+})
+global.define("exit", function(){
+    process.exit()
+})
 fs.define("getFile", function(path) {
     // .replace(/[^\w\s\.,\(\);\/]/gi, "")
     return fs.readFileSync(path, 'utf8')//.split(/\r?\n/).map(x => x.trim())
