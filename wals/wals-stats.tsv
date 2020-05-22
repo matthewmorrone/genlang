@@ -1,0 +1,1144 @@
+Feature	Count	Total	Description
+1A	89	563	Small
+1A	122	563	Moderately small
+1A	201	563	Average
+1A	94	563	Moderately large
+1A	57	563	Large
+2A	93	564	Small vowel inventory (2-4)
+2A	287	564	Average vowel inventory (5-6)
+2A	184	564	Large vowel inventory (7-14)
+3A	58	564	Low
+3A	101	564	Moderately low
+3A	234	564	Average
+3A	102	564	Moderately high
+3A	69	564	High
+4A	182	567	No voicing contrast
+4A	189	567	Voicing contrast in plosives alone
+4A	38	567	Voicing contrast in fricatives alone
+4A	158	567	Voicing contrast in both plosives and fricatives
+5A	242	567	Other
+5A	255	567	/p t k b d g/
+5A	33	567	Missing /p/
+5A	34	567	Missing /g/
+5A	3	567	Both /p/ and /g/ missing
+6A	470	567	No uvulars
+6A	38	567	Uvular stops only
+6A	11	567	Uvular continuants only
+6A	48	567	Uvular stops and continuants
+7A	409	567	No glottalized consonants
+7A	58	567	Ejectives only
+7A	55	567	Implosives only
+7A	4	567	Glottalized resonants only
+7A	14	567	Ejectives and implosives
+7A	20	567	Ejectives and glottalized resonants
+7A	4	567	Implosives and glottalized resonants
+7A	3	567	Ejectives, implosives and glottalized resonants
+8A	95	567	No laterals
+8A	388	567	/l/, no obstruent laterals
+8A	29	567	Laterals, but no /l/, no obstruent lateral
+8A	47	567	/l/ and lateral obstruents
+8A	8	567	No /l/, but lateral obstruents
+9A	147	469	Velar nasal, also initially
+9A	87	469	Velar nasal, but not initially
+9A	235	469	No velar nasal
+10A	64	244	Contrastive nasal vowels present
+10A	180	244	Contrastive nasal vowels absent
+10B	20	40	no nasal vs. oral vowel contrast
+10B	7	40	two-way nasal vs. oral vowel contrast (/á¹½/ vs. /V/) without nasal spreading
+10B	4	40	two-way nasal vs. oral vowel contrast (/á¹½/ vs. /V/) with nasal spreading
+10B	5	40	four-way nasal vs. oral vowel contrast (/á¹½/ vs. /á¹½Ë/ vs. /V/ vs. /VË/) without nasal spreading
+10B	4	40	four-way nasal vs. oral vowel contrast (/á¹½/ vs. /á¹½Ë/ vs. /V/ v /VË/) with nasal spreading
+11A	525	562	None
+11A	23	562	High and mid
+11A	8	562	High only
+11A	6	562	Mid only
+12A	61	486	Simple syllable structure
+12A	274	486	Moderately complex syllable structure
+12A	151	486	Complex syllable structure
+13A	307	527	No tones
+13A	132	527	Simple tone system
+13A	88	527	Complex tone system
+14A	220	502	No fixed stress (mostly weight-sensitive stress)
+14A	92	502	Initial: stress is on the first syllable
+14A	16	502	Second: stress is on the second syllable
+14A	1	502	Third: stress is on the third syllable
+14A	12	502	Antepenultimate: stress is on the antepenultimate (third from the right) syllable
+14A	110	502	Penultimate: stress is on the penultimate (second from the right) syllable
+14A	51	502	Ultimate: stress is on the ultimate (last) syllable
+15A	37	500	Left-edge: Stress is on the first or second syllable
+15A	2	500	Left-oriented: The third syllable is involved
+15A	65	500	Right-edge: Stress on ultimate or penultimate syllable
+15A	27	500	Right-oriented: The antepenultimate is involved
+15A	54	500	Unbounded: Stress can be anywhere in the word
+15A	8	500	Combined: Both Right-edge and unbounded
+15A	26	500	Not predictable
+15A	281	500	Fixed stress (no weight-sensitivity)
+16A	261	500	No weight, or weight factor unknown
+16A	65	500	Long vowel: long vowels are heavy for stress
+16A	18	500	Coda consonant: closed syllables are heavy for stress
+16A	35	500	Long vowel + Coda: long vowels or closed syllables
+16A	41	500	Prominence: other factors are heavy for stress
+16A	38	500	Lexical: lexical stress, diacritic weight
+16A	42	500	Combined: two of the above factors determine weight
+17A	153	323	Trochaic: left-hand syllable in the foot is strong
+17A	31	323	Iambic: right-hand syllable in the foot is strong
+17A	4	323	Dual: system has both trochaic and iambic feet
+17A	37	323	Undetermined: no clear foot type
+17A	98	323	Absent: no rhythmic stress
+18A	503	567	All present
+18A	4	567	No bilabials
+18A	48	567	No fricatives
+18A	10	567	No nasals
+18A	1	567	No bilabials or nasals
+18A	1	567	No fricatives or nasals
+19A	449	567	None
+19A	9	567	Clicks
+19A	45	567	Labial-velars
+19A	21	567	Pharyngeals
+19A	40	567	'Th' sounds
+19A	1	567	Clicks, pharyngeals, and 'th'
+19A	2	567	Pharyngeals and 'th'
+20A	125	165	Exclusively concatenative
+20A	16	165	Exclusively isolating
+20A	3	165	Exclusively tonal
+20A	1	165	Tonal/isolating
+20A	2	165	Tonal/concatenative
+20A	5	165	Ablaut/concatenative
+20A	13	165	Isolating/concatenative
+21A	71	162	Monoexponential case
+21A	8	162	Case + number
+21A	6	162	Case + referentiality
+21A	2	162	Case + TAM (tense-aspect-mood)
+21A	75	162	No case
+21B	127	160	monoexponential TAM
+21B	19	160	TAM+agreement
+21B	4	160	TAM+agreement+diathesis
+21B	1	160	TAM+agreement+construct
+21B	5	160	TAM+polarity
+21B	4	160	no TAM
+22A	5	145	0-1 category per word
+22A	24	145	2-3 categories per word
+22A	52	145	4-5 categories per word
+22A	31	145	6-7 categories per word
+22A	24	145	8-9 categories per word
+22A	7	145	10-11 categories per word
+22A	2	145	12-13 categories per word
+23A	71	236	P is head-marked
+23A	63	236	P is dependent-marked
+23A	58	236	P is double-marked
+23A	42	236	P has no marking
+23A	2	236	Other types
+24A	78	236	Possessor is head-marked
+24A	98	236	Possessor is dependent-marked
+24A	22	236	Possessor is double-marked
+24A	32	236	Possessor has no marking
+24A	6	236	Other types
+25A	47	236	Consistently head-marking
+25A	46	236	Consistently dependent-marking
+25A	16	236	Consistently double-marking
+25A	6	236	Consistently zero-marking
+25A	121	236	Inconsistent marking or other type
+25B	16	235	Zero-marking
+25B	219	235	Non-zero marking
+26A	141	969	Little or no inflectional morphology
+26A	406	969	Predominantly suffixing
+26A	123	969	Moderate preference for suffixing
+26A	147	969	Approximately equal amounts of suffixing and prefixing
+26A	94	969	Moderate preference for prefixing
+26A	58	969	Predominantly prefixing
+27A	278	368	Productive full and partial reduplication
+27A	35	368	Full reduplication only
+27A	55	368	No productive reduplication
+28A	123	198	Inflectional case marking is absent or minimal
+28A	18	198	Inflectional case marking is syncretic for core cases only
+28A	22	198	Inflectional case marking is syncretic for core and non-core cases
+28A	35	198	Inflectional case marking is never syncretic
+29A	57	198	No subject person/number marking
+29A	60	198	Subject person/number marking is syncretic
+29A	81	198	Subject person/number marking is never syncretic
+30A	145	257	None
+30A	50	257	Two
+30A	26	257	Three
+30A	12	257	Four
+30A	24	257	Five or more
+31A	145	257	No gender system
+31A	84	257	Sex-based gender system
+31A	28	257	Non-sex-based gender system
+32A	145	257	No gender system
+32A	53	257	Semantic assignment
+32A	59	257	Semantic and formal assignment
+33A	126	1066	Plural prefix
+33A	513	1066	Plural suffix
+33A	6	1066	Plural stem change
+33A	4	1066	Plural tone
+33A	8	1066	Plural by complete reduplication of stem
+33A	60	1066	Morphological plural with no method primary
+33A	170	1066	Plural word
+33A	81	1066	Plural clitic
+33A	98	1066	No plural
+34A	28	291	No nominal plural
+34A	20	291	Plural only in human nouns, optional
+34A	40	291	Plural only in human nouns, obligatory
+34A	55	291	Plural in all nouns, always optional
+34A	15	291	Plural in all nouns, optional in inanimates
+34A	133	291	Plural in all nouns, always obligatory
+35A	2	261	No independent subject pronouns
+35A	9	261	Number-indifferent pronouns
+35A	25	261	Person-number affixes
+35A	114	261	Person-number stem
+35A	47	261	Person-number stem with a pronominal plural affix
+35A	22	261	Person-number stem with a nominal plural affix
+35A	23	261	Person stem with a pronominal plural affix
+35A	19	261	Person stem with a nominal plural affix
+36A	104	236	Associative plural marker also used for additive plurals
+36A	48	236	Special bound associative plural marker
+36A	47	236	Special non-bound associative plural marker
+36A	37	236	Associative plural absent
+37A	216	620	Definite word distinct from demonstrative
+37A	69	620	Demonstrative word used as marker of definiteness
+37A	92	620	Definite affix on noun
+37A	45	620	No definite article but indefinite article
+37A	198	620	Neither definite nor indefinite article
+38A	102	534	Indefinite word distinct from numeral for 'one'
+38A	112	534	Numeral for 'one' is used as indefinite article
+38A	24	534	Indefinite affix on noun
+38A	98	534	No indefinite article but definite article
+38A	198	534	Neither indefinite nor definite
+39A	2	200	No grammaticalised marking at all
+39A	10	200	'We' and 'I' identical
+39A	120	200	No inclusive/exclusive opposition
+39A	5	200	Only inclusive differentiated
+39A	63	200	Inclusive and exclusive differentiated
+39B	31	71	No inclusive/exclusive opposition
+39B	40	71	Inclusive and exclusive differentiated
+40A	70	200	No person marking at all
+40A	12	200	'We' and 'I' identical
+40A	79	200	No inclusive/exclusive opposition
+40A	9	200	Only inclusive differentiated
+40A	30	200	Inclusive and exclusive differentiated
+41A	7	234	No distance contrast
+41A	127	234	Two-way contrast
+41A	88	234	Three-way contrast
+41A	8	234	Four-way contrast
+41A	4	234	Five (or more)-way contrast
+42A	143	201	Same forms
+42A	37	201	Different stems
+42A	21	201	Different inflectional features
+43A	100	225	Third person pronouns and demonstratives are unrelated to demonstratives
+43A	52	225	Third person pronouns and demonstratives are related to all demonstratives
+43A	18	225	Third person pronouns and demonstratives are related to remote demonstratives
+43A	14	225	Third person pronouns and demonstratives are related to non-remote demonstratives
+43A	24	225	Third person pronouns and demonstratives are related by gender markers
+43A	17	225	Third person pronouns and demonstratives are related for non-human reference
+44A	18	378	Gender distinctions in 3rd person plus 1st and/or 2nd person
+44A	42	378	Gender distinctions in 3rd person only, but in both singular and non-singular
+44A	61	378	Gender distinctions in 3rd person singular only
+44A	2	378	Gender distinctions in 1st or 2nd person but not 3rd
+44A	1	378	Gender distinctions in 3rd person non-singular only
+44A	254	378	No gender distinctions
+45A	136	207	Second person pronouns encode no politeness distinction
+45A	49	207	Second person pronouns encode a binary politeness distinction
+45A	15	207	Second person pronouns encode multiple politeness distinctions
+45A	7	207	Second person pronouns are dominantly avoided for politeness reasons
+46A	194	326	Interrogative-based indefinites
+46A	85	326	Generic-noun-based indefinites
+46A	22	326	Special indefinites
+46A	23	326	Mixed indefinites
+46A	2	326	Existential construction
+47A	94	168	Intensifiers and reflexive pronouns are formally identical
+47A	74	168	Intensifiers and reflexive pronouns are formally differentiated
+48A	63	378	No adpositions
+48A	209	378	Adpositions without person marking
+48A	83	378	Person marking for pronouns only
+48A	23	378	Person marking for pronouns and nouns
+49A	100	261	No morphological case-marking
+49A	23	261	2 case categories
+49A	9	261	3 case categories
+49A	9	261	4 case categories
+49A	12	261	5 case categories
+49A	37	261	6-7 case categories
+49A	23	261	8-9 case categories
+49A	24	261	10 or more case categories
+49A	24	261	Exclusively borderline morphological case-marking
+50A	81	261	No morphological case-marking
+50A	79	261	Symmetrical case-marking
+50A	53	261	Additive-quantitatively asymmetrical case-marking
+50A	20	261	Subtractive-quantitatively asymmetrical case-marking
+50A	7	261	Qualitatively asymmetrical case-marking
+50A	21	261	Syncretism in relevant NP-types
+51A	452	1031	Case suffixes
+51A	38	1031	Case prefixes
+51A	5	1031	Case coded by tone
+51A	1	1031	Case coded by changes within noun stem
+51A	9	1031	Mixed morphological case strategies with none primary
+51A	123	1031	Postpositional clitics
+51A	17	1031	Prepositional clitics
+51A	7	1031	Inpositional clitics
+51A	379	1031	Neither case affixes nor adpositional clitics
+52A	76	322	Identity
+52A	213	322	Differentiation
+52A	33	322	Mixed
+53A	33	321	Zero: Ordinal numerals do not exist
+53A	3	321	One: No distinction of cardinal and ordinal numerals
+53A	12	321	First: Cardinal and ordinal numerals are identical except for 'one' and 'first'
+53A	41	321	One-th: One-th: Ordinal numerals are derived from cardinal numerals
+53A	54	321	First/One-th: All ordinal numerals are derived from cardinal numerals with different allomorphs for 'first' one of which is morphologically independent of 'one'
+53A	110	321	Two-th: Two-th: Ordinal numerals from 'two' upwards are derived from cardinal numerals, 'first' is suppletive
+53A	61	321	Second: 'First' and a small set of consecutive higher ordinal numerals are suppletive
+53A	7	321	Variou-th: Other solutions
+54A	62	251	No distributive numerals
+54A	85	251	Marked by reduplication
+54A	23	251	Marked by prefix
+54A	32	251	Marked by suffix
+54A	21	251	Marked by preceding word
+54A	5	251	Marked by following word
+54A	23	251	Marked by mixed or other strategies
+55A	260	400	Numeral classifiers are absent
+55A	62	400	Numeral classifiers are optional
+55A	78	400	Numeral classifiers are obligatory
+56A	40	116	Formally different
+56A	33	116	Formally similar, not involving interrogative expression
+56A	43	116	Formally similar, involving interrogative expression
+57A	255	902	Possessive prefixes
+57A	355	902	Possessive suffixes
+57A	32	902	Both possessive prefixes and possessive suffixes, with neither primary
+57A	260	902	No possessive affixes
+58A	43	244	Obligatorily possessed nouns exist
+58A	201	244	No obligatorily possessed nouns
+58B	233	243	None reported
+58B	3	243	One
+58B	4	243	Two to four
+58B	3	243	Five or more
+59A	125	243	No possessive classification
+59A	94	243	Two classes
+59A	20	243	Three to five classes
+59A	4	243	More than five classes
+60A	15	138	Weakly differentiated
+60A	8	138	Moderately differentiated, with genitives and adjectives collapsed
+60A	2	138	Moderately differentiated, with genitives and relative clauses collapsed
+60A	33	138	Moderately differentiated, with adjectives and relative clauses collapsed
+60A	3	138	Moderately differentiated; other
+60A	77	138	Highly differentiated
+61A	1	124	Adjective may not occur without noun
+61A	73	124	Adjective may occur without noun, and without marking
+61A	7	124	Adjective may occur without noun, obligatorily marked by prefix
+61A	13	124	Adjective may occur without noun, obligatorily marked by suffix
+61A	18	124	Adjective may occur without noun, obligatorily marked by preceding word
+61A	7	124	Adjective may occur without noun, obligatorily marked by following word
+61A	5	124	Adjective may occur without noun, obligatorily marked by mixed or other strategies
+62A	25	168	Sentential: dependent-marking of the finite clause is retained for S, A and P
+62A	29	168	Possessive-Accusative: S/A treated as possessors, P retains sentential marking
+62A	21	168	Ergative-Possessive: S/P treated as possessors, A treated differently
+62A	7	168	Double-Possessive: All major arguments treated as possessors
+62A	6	168	Other: Minor patterns
+62A	14	168	Mixed: Several patterns in the same language
+62A	24	168	Not both A and P in the same construction
+62A	42	168	No action nominals
+63A	131	234	AND-languages: 'and' and 'with' are not identical
+63A	103	234	WITH-languages: 'and' and 'with' are identical
+64A	161	301	Nominal and verbal conjunction are largely identical
+64A	125	301	Nominal and verbal conjunction are different
+64A	15	301	Nominal and verbal conjunction are primarily expressed by juxtaposition
+65A	101	222	Grammatical marking of perfective/imperfective distinction
+65A	121	222	No grammatical marking of perfective/imperfective distinction
+66A	94	222	Past/non-past distinction marked; no remoteness distinction
+66A	38	222	Past/non-past distinction marked; 2-3 degrees of remoteness distinguished
+66A	2	222	Past/non-past distinction marked; at least 4 degrees of remoteness distinguished
+66A	88	222	No grammatical marking of past/non-past distinction
+67A	110	222	Inflectional marking of future/non-future distinction
+67A	112	222	No inflectional marking of future/non-future distinction
+68A	7	222	Perfect of the 'have'-type (derived from a possessive construction)
+68A	21	222	Perfect derived from word meaning 'finish' or 'already'
+68A	80	222	Other perfect
+68A	114	222	No perfect
+69A	153	1131	Tense-aspect prefixes
+69A	667	1131	Tense-aspect suffixes
+69A	13	1131	Tense-aspect tone
+69A	146	1131	Combination of tense-aspect strategies with none primary
+69A	152	1131	No tense-aspect inflection
+70A	292	547	The language has morphologically dedicated second singular as well as second plural imperatives
+70A	42	547	The language has morphologically dedicated second singular imperatives but no morphologically dedicated second plural imperatives
+70A	2	547	The language has morphologically dedicated second plural imperatives but no morphologically dedicated second singular imperatives
+70A	89	547	The language has morphologically dedicated second person imperatives that do not distinguish between singular and plural
+70A	122	547	The language has no morphologically dedicated second-person imperatives at all
+71A	113	495	The prohibitive uses the verbal construction of the second singular imperative and a sentential negative strategy found in (indicative) declaratives
+71A	182	495	The prohbitive uses the verbal construction of the second singular imperative and a sentential negative strategy not found in (indicative) declaratives
+71A	55	495	The prohibitive uses a verbal construction other than the second singular imperative and a sentential negative strategy found in (indicative) declaratives
+71A	145	495	The prohibitive uses a verbal construction other than the second singular imperative and a sentential negative strategy not found in (indicative) declaratives
+72A	133	375	The language has a maximal system, but not a minimal one
+72A	20	375	The language has a minimal system, but not a maximal one
+72A	21	375	The language has both a maximal and a minimal system
+72A	201	375	The language has neither a maximal nor a minimal system
+73A	48	319	Inflectional optative present
+73A	271	319	Inflectional optative absent
+74A	63	234	The language can express situational possibility with affixes on verbs
+74A	158	234	The language cannot express situational possibility with affixes on verbs, but with verbal constructions
+74A	13	234	The language cannot express situational possibility with affixes on verbs or with verbal constructions, but with other kinds of markers
+75A	65	240	The language can express epistemic possibility with verbal constructions
+75A	84	240	The language cannot express epistemic possibility with verbal constructions, but with affixes on verbs
+75A	91	240	The language cannot express epistemic possibility with verbal constructions or with affixes on verbs, but with other kinds of markers
+76A	36	207	The language has markers that can code both situational and epistemic modality, both for possibility and necessity
+76A	66	207	The language has markers that can code both situational and epistemic modality, but only for possibility or for necessity
+76A	105	207	The language has no markers that can code both situational and epistemic modality
+77A	181	418	No grammatical evidentials
+77A	166	418	Only indirect evidentials
+77A	71	418	Both direct and indirect evidentials
+78A	181	418	No grammatical evidentials
+78A	131	418	Verbal affix or clitic
+78A	24	418	Part of the tense system
+78A	65	418	Separate particle
+78A	7	418	Modal morpheme
+78A	10	418	Mixed systems
+79A	36	193	Suppletion according to tense
+79A	10	193	Suppletion according to aspect
+79A	24	193	Suppletion in both tense and aspect
+79A	123	193	No suppletion in tense or aspect
+79B	8	193	A regular and a suppletive form alternate
+79B	29	193	Imperative
+79B	2	193	Hortative
+79B	1	193	Imperative and Hortative
+79B	153	193	None (= no suppletive imperatives reported in the reference material)
+80A	159	193	No singular-(dual)-plural pairs/triples
+80A	12	193	Singular-plural pairs, no suppletion
+80A	15	193	Singular-plural pairs, suppletion
+80A	5	193	Singular-dual-plural triples, no suppletion
+80A	2	193	Singular-dual-plural triples, suppletion
+81A	565	1377	Subject-object-verb (SOV)
+81A	488	1377	Subject-verb-object (SVO)
+81A	95	1377	Verb-subject-object (VSO)
+81A	25	1377	Verb-object-subject (VOS)
+81A	11	1377	Object-verb-subject (OVS)
+81A	4	1377	Object-subject-verb (OSV)
+81A	189	1377	Lacking a dominant word order
+81B	29	67	SOV or SVO
+81B	14	67	VSO or VOS
+81B	13	67	SVO or VSO
+81B	8	67	SVO or VOS
+81B	3	67	SOV or OVS
+82A	1193	1497	Subject precedes verb (SV)
+82A	194	1497	Subject follows verb (VS)
+82A	110	1497	Both orders with neither order dominant
+83A	713	1519	Object precedes verb (OV)
+83A	705	1519	Object follows verb (VO)
+83A	101	1519	Both orders with neither order dominant
+84A	210	500	Verb-object-oblique (VOX)
+84A	3	500	Oblique-verb-object (XVO)
+84A	48	500	Oblique-object-verb (XOV)
+84A	27	500	Object-oblique-verb (OXV)
+84A	45	500	Object-verb-oblique (OVX)
+84A	167	500	More than one order with none dominant
+85A	576	1183	Postpositions
+85A	511	1183	Prepositions
+85A	8	1183	Inpositions
+85A	58	1183	More than one adposition type with none dominant
+85A	30	1183	No adpositions
+86A	685	1249	Genitive-noun (GenN)
+86A	468	1249	Noun-genitive (NGen)
+86A	96	1249	Both orders occur with neither order dominant
+87A	373	1366	Modifying adjective precedes noun (AdjN)
+87A	878	1366	Modifying adjective follows noun (NAdj)
+87A	110	1366	Both orders of noun and modifying adjective occur, with neither dominant
+87A	5	1366	Adjectives do not modify nouns, occurring as predicates in internally headed relative clauses
+88A	542	1224	Demonstrative word precedes noun (DemN)
+88A	561	1224	Demonstrative word follows noun (NDem)
+88A	9	1224	Demonstrative prefix on noun
+88A	28	1224	Demonstrative suffix on noun
+88A	17	1224	Demonstrative simultaneously before and after noun
+88A	67	1224	Two or more of above types with none dominant
+89A	479	1153	Numeral precedes noun (NumN)
+89A	607	1153	Numeral follows noun (NNum)
+89A	65	1153	Both orders of numeral and noun with neither order dominant
+89A	2	1153	Numeral only modifies verb
+90A	579	824	Relative clause follows noun (NRel)
+90A	141	824	Relative clause precedes noun (RelN)
+90A	24	824	Internally-headed relative clause
+90A	7	824	Correlative relative clause
+90A	8	824	Adjoined relative clause
+90A	1	824	Double-headed relative clause
+90A	64	824	Mixed types of relative clause with none dominant
+90B	141	191	Relative clause-Noun (RelN) dominant
+90B	29	191	RelN or NRel
+90B	15	191	RelN or internally-headed
+90B	5	191	RelN or correlative
+90B	1	191	RelN or double-headed
+90C	579	620	Noun-Relative clause (NRel) dominant
+90C	31	620	NRel or RelN
+90C	8	620	NRel or internally-headed
+90C	2	620	NRel or correlative
+90D	24	63	Internally-headed relative clause dominant
+90D	15	63	Internally-headed or RelN
+90D	8	63	Internally-headed or NRel
+90D	1	63	Internally-headed or correlative
+90D	1	63	Internally-headed or double-headed
+90D	10	63	Internally-headed occurs as nondominant type
+90D	4	63	Internally-headed exists
+90E	7	23	Correlative relative clause dominant
+90E	7	23	Correlative or RelN
+90E	2	23	Correlative or NRel
+90E	1	23	Correlative or internally-headed
+90E	2	23	Correlative or adjoined
+90E	3	23	Correlative as nondominant type
+90E	1	23	Correlative exists
+90F	8	10	Adjoined relative clause dominant
+90F	2	10	Adjoined or correlative
+90G	1	5	Double-headed dominant
+90G	1	5	Double-headed or RelN
+90G	1	5	Double-headed or internally-headed
+90G	2	5	Double-headed as nondominant type
+91A	227	481	Degree word precedes adjective (DegAdj)
+91A	192	481	Degree word follows adjective (AdjDeg)
+91A	62	481	Both orders occur with neither order dominant
+92A	129	884	Question particle at beginning of sentence
+92A	314	884	Question particle at end of sentence
+92A	52	884	Question particle in second position in sentence
+92A	8	884	Question particle with other position
+92A	26	884	Question particle in either of two positions
+92A	355	884	No question particle
+93A	264	902	Interrogative phrases obligatorily initial
+93A	615	902	Interrogative phrases not obligatorily initial
+93A	23	902	Mixed, some interrogative phrases obligatorily initial, some not
+94A	398	659	Adverbial subordinators which are separate words and which appear at the beginning of the subordinate clause
+94A	96	659	Adverbial subordinators which are separate words and which appear at the end of the subordinate clause
+94A	8	659	Clause-internal adverbial subordinators
+94A	64	659	Suffixal adverbial subordinators
+94A	93	659	More than one type of adverbial subordinators with none dominant
+95A	472	1142	Object-verb and postpositional (OV&Postp)
+95A	14	1142	Object-verb and prepositional (OV&Prep)
+95A	42	1142	Verb-object and postpositional (VO&Postp)
+95A	456	1142	Verb-object and prepositional (VO&Prep)
+95A	158	1142	Languages not falling into one of the preceding four types
+96A	132	879	Object-verb and relative clause-noun (OV&RelN)
+96A	113	879	Object-verb and noun-relative clause (OV&NRel)
+96A	5	879	Verb-object and relative clause-noun (VO&RelN)
+96A	416	879	Verb-object and noun-relative clause (VO&NRel)
+96A	213	879	Languages not falling into one of the preceding four types
+97A	216	1316	Object-verb and adjective-noun (OV&AdjN)
+97A	332	1316	Object-verb and noun-adjective (OV&NAdj)
+97A	114	1316	Verb-object and adjective-noun (VO&AdjN)
+97A	456	1316	Verb-object and noun-adjective (VO&NAdj)
+97A	198	1316	Languages not falling into one of the preceding four types
+98A	98	190	Neutral
+98A	46	190	Nominative - accusative (standard)
+98A	6	190	Nominative - accusative (marked nominative)
+98A	32	190	Ergative - absolutive
+98A	4	190	Tripartite
+98A	4	190	Active - inactive
+99A	79	172	Neutral
+99A	61	172	Nominative - accusative (standard)
+99A	3	172	Nominative - accusative (marked nominative)
+99A	20	172	Ergative - absolutive
+99A	3	172	Tripartite
+99A	3	172	Active - inactive
+99A	3	172	None
+100A	84	380	Neutral alignment (no verbal person marking)
+100A	212	380	Accusative alignment
+100A	19	380	Ergative alignment
+100A	26	380	Active alignment
+100A	11	380	Hierarchical alignment
+100A	28	380	Split alignment
+101A	82	711	Pronominal subjects are expressed by pronouns in subject position that are normally if not obligatorily present
+101A	437	711	Pronominal subjects are expressed by affixes on verbs
+101A	32	711	Pronominal subjects are expressed by clitics with variable host
+101A	67	711	Pronominal subjects are expressed by subject pronouns that occur in a different syntactic position from full noun phrase subjects
+101A	61	711	Pronominal subjects are expressed only by pronouns in subject position, but these pronouns are often left out
+101A	32	711	More than one of the above types with none dominant
+102A	82	378	No person marking of any argument
+102A	73	378	Person marking of only the A argument
+102A	24	378	Person marking of only the P argument
+102A	6	378	Person marking of the A or P argument
+102A	193	378	Person marking of both the A and P arguments
+103A	96	380	No person marking of the S
+103A	181	380	No zero realization of third person S forms
+103A	21	380	Zero realization of some third person singular forms
+103A	45	380	Zero realization of all third person singular S forms
+103A	36	380	Zero realization of all third person forms/No third person S forms
+103A	1	380	Zero realization only of third person non-singular
+104A	187	379	A and P do not or do not both occur on the verb
+104A	96	379	A precedes P
+104A	57	379	P precedes A
+104A	19	379	Both orders of A and P occur
+104A	20	379	A and P are fused
+105A	189	378	Indirect-object construction
+105A	84	378	Double-object construction
+105A	65	378	Secondary-object construction
+105A	40	378	Mixed
+106A	16	175	There are no non-iconic reciprocal constructions.
+106A	99	175	All reciprocal constructions are formally distinct from reflexive constructions.
+106A	16	175	There are both reflexive and non-reflexive reciprocal constructions.
+106A	44	175	The reciprocal and reflexive constructions are formally identical.
+107A	162	373	There is a passive construction
+107A	211	373	There is no passive construction
+108A	18	194	Antipassive with patient-like argument left implicit
+108A	30	194	Antipassive with patient-like argument expressed as oblique complement
+108A	146	194	No antipassive
+108B	24	186	productive
+108B	14	186	partially productive
+108B	2	186	not productive
+108B	146	186	no antipassive
+109A	16	183	Benefactive object only; both bases
+109A	4	183	Benefactive object only; transitive base only
+109A	49	183	Benefactive and other; both bases
+109A	2	183	Benefactive and other; transitive base only
+109A	9	183	Non-benefactive object only; both bases
+109A	1	183	Non-benefactive object only; transitive base only
+109A	2	183	Non-benefactive object only; intransitive base only
+109A	100	183	No applicative construction
+109B	17	183	Instrument
+109B	18	183	Locative
+109B	12	183	Instrument and locative
+109B	36	183	No other roles (= Only benefactive)
+109B	100	183	No applicative construction
+110A	35	118	Sequential type but no purposive type
+110A	68	118	Purposive type but no sequential type
+110A	15	118	Both sequential type and purposive type
+111A	23	310	No morphological type or compound type
+111A	254	310	Morphological type but no compound type
+111A	9	310	Compound type but no morphological type
+111A	24	310	Both morphological type and compound type
+112A	395	1157	Negative affix
+112A	502	1157	Negative particle
+112A	47	1157	Negative auxiliary verb
+112A	73	1157	Negative word, unclear if verb or particle
+112A	21	1157	Variation between negative word and affix
+112A	119	1157	Double negation
+113A	114	297	Symmetric standard negation only: Type Sym
+113A	53	297	Asymmetric standard negation only: Type Asy
+113A	130	297	Symmetric and asymmetric standard negation: Type SymAsy
+114A	40	297	In finiteness: Subtype A/Fin
+114A	20	297	In reality status: Subtype A/NonReal
+114A	82	297	In other grammatical categories: Subtype A/Cat
+114A	9	297	In finiteness and reality status: Subtypes A/Fin and A/NonReal
+114A	21	297	In finiteness and other grammatical categories: Subtypes A/Fin and A/Cat
+114A	11	297	In reality status and other grammatical categories: Subtypes A/NonReal and A/Cat
+114A	114	297	Non-assignable (no asymmetry found)
+115A	170	206	Negative indefinites co-occur with predicate negation
+115A	11	206	Negative indefinites preclude predicate negation
+115A	13	206	Negative indefinites show mixed behaviour
+115A	12	206	Negative existential construction
+116A	585	955	Question particle
+116A	164	955	Interrogative verb morphology
+116A	15	955	Question particle and interrogative verb morphology
+116A	13	955	Interrogative word order
+116A	4	955	Absence of declarative morphemes
+116A	173	955	Interrogative intonation only
+116A	1	955	No interrogative-declarative distinction
+117A	48	240	Locational Possessive
+117A	22	240	Genitive Possessive
+117A	48	240	Topic Possessive
+117A	59	240	Conjunctional Possessive
+117A	63	240	Have-Possessive
+118A	151	386	Predicative adjectives have verbal encoding
+118A	132	386	Predicative adjectives have nonverbal encoding
+118A	103	386	Predicative adjectives have mixed encoding
+119A	269	386	Split (i.e. different) encoding of nominal and locational predication
+119A	117	386	Shared (i.e. identical) encoding of nominal and locational predication
+120A	211	386	Zero copula is impossible
+120A	175	386	Zero copula is possible
+121A	78	167	Locational Comparative
+121A	33	167	Exceed Comparative
+121A	34	167	Conjoined Comparative
+121A	22	167	Particle Comparative
+122A	12	166	Relative pronoun
+122A	24	166	Non-reduction
+122A	5	166	Pronoun-retention
+122A	125	166	Gap
+123A	13	112	Relative Pronoun Strategy
+123A	14	112	Non-Reduction Strategy
+123A	20	112	Pronoun-Retention Strategy
+123A	55	112	Gap Strategy
+123A	10	112	Not possible
+124A	144	283	The complement subject is left implicit
+124A	72	283	The complement subject is expressed overtly
+124A	14	283	Both construction types exist
+124A	45	283	'Want' is expressed as a desiderative verbal affix
+124A	8	283	'Want' is expressed as an uninflected desiderative particle
+125A	38	170	Balanced
+125A	30	170	Balanced/deranked
+125A	102	170	Deranked
+126A	84	174	Balanced
+126A	39	174	Balanced/deranked
+126A	51	174	Deranked
+127A	90	169	Balanced
+127A	37	169	Balanced/deranked
+127A	42	169	Deranked
+128A	114	143	Balanced
+128A	18	143	Balanced/deranked
+128A	11	143	Deranked
+129A	228	617	Identity: a single word denotes both 'hand' and 'arm'
+129A	389	617	Differentiation: one word denotes 'hand' and another, different word denotes 'arm'
+130A	72	593	Identity: a single word denotes both 'hand' and 'finger' and/or 'fingers'
+130A	521	593	Differentiation: one word denotes 'hand' and another, different word denotes 'finger' (or, very rarely, 'fingers')
+130B	46	72	Hunter-gatherers
+130B	18	72	Farmer-foragers
+130B	8	72	Full-fledged farmers
+131A	125	196	Decimal
+131A	22	196	Hybrid vigesimal-decimal
+131A	20	196	Pure vigesimal
+131A	5	196	Other base
+131A	4	196	Extended body-part system
+131A	20	196	Restricted
+132A	10	119	3 categories
+132A	3	119	Between 3 and 4 categories
+132A	9	119	4 categories
+132A	1	119	Between 4 and 5 categories
+132A	56	119	5 categories
+132A	11	119	Between 5 and 6 categories
+132A	29	119	6 categories
+133A	20	119	3, between 3 and 4, or 4 categories
+133A	26	119	Between 4 and 5, 5, or between 5 and 6 categories
+133A	34	119	6 or between 6 and 7 categories
+133A	14	119	7 or between 7 and 8 categories
+133A	6	119	8 or between 8 and 9 categories
+133A	8	119	9, between 9 and 10, or 10 categories
+133A	11	119	More than 10 categories
+134A	30	120	Green and blue
+134A	68	120	Green-or-blue ('grue')
+134A	15	120	Black-or-green-or-blue
+134A	2	120	Black-or-blue and green
+134A	2	120	Yellow-or-green-or-blue
+134A	1	120	Yellow-or-green and blue
+134A	2	120	Green and blue not both encoded in any basic color term
+135A	98	120	Red and yellow
+135A	15	120	Red-or-yellow
+135A	3	120	Red and yellow-or-green-or-blue
+135A	1	120	Red and yellow-or-green
+135A	3	120	Red and yellow not both encoded in any basic color term
+136A	200	230	No M-T pronouns
+136A	27	230	M-T pronouns, paradigmatic
+136A	3	230	M-T pronouns, non-paradigmatic
+136B	177	230	No m in first person singular
+136B	53	230	m in first person singular
+137A	194	230	No N-M pronouns
+137A	25	230	N-M pronouns, paradigmatic
+137A	11	230	N-M pronouns, non-paradigmatic
+137B	152	230	No m in second person singular
+137B	78	230	m in second person singular
+138A	109	230	Words derived from Sinitic cha
+138A	84	230	Words derived from Min Nan Chinese te
+138A	37	230	Others
+139A	1	35	No irregular negatives
+139A	3	35	One irregular negative
+139A	10	35	Some irregular negatives (2-5)
+139A	21	35	Many irregular negatives (more than 5)
+140A	25	38	No question particle
+140A	9	38	One question particle
+140A	4	38	More than one question particle
+141A	0	6	Alphabetic
+141A	0	6	Consonantal
+141A	4	6	Alphasyllabic
+141A	2	6	Syllabic
+141A	0	6	Logographic
+141A	0	6	Mixed logographicâ€“syllabic
+142A	47	143	Clicks may express logical meanings ('yes' and/or 'no')
+142A	71	143	Clicks may express affective but not logical meanings
+142A	25	143	Clicks may express neither affective nor logical meanings
+143A	524	1324	NegV
+143A	171	1324	VNeg
+143A	162	1324	[Neg-V]
+143A	202	1324	[V-Neg]
+143A	1	1324	Negative Tone
+143A	22	1324	Type 1 / Type 2
+143A	9	1324	Type 1 / Type 3
+143A	12	1324	Type 1 / Type 4
+143A	2	1324	Type 2 / Type 3
+143A	9	1324	Type 2 / Type 4
+143A	8	1324	Type 3 / Type 4
+143A	1	1324	Type 3 / Negative Infix
+143A	1	1324	Optional Single Negation
+143A	114	1324	Obligatory Double Negation
+143A	80	1324	Optional Double Negation
+143A	5	1324	Optional Triple Negation with Obligatory Double Negation
+143A	1	1324	Optional Triple Negation with Optional Double Negation
+143B	35	119	NegVNeg
+143B	28	119	Neg[V-Neg]
+143B	9	119	[Neg-V]Neg
+143B	27	119	[Neg-V-Neg]
+143B	1	119	Negative tone & VNeg
+143B	2	119	Negative tone & [Neg-V]
+143B	2	119	NegNegV
+143B	2	119	Neg[Neg-V]
+143B	2	119	VNegNeg
+143B	1	119	Type 1 / Type 2
+143B	1	119	Type 1 / Type 3
+143B	1	119	Type 1 / Type 5
+143B	1	119	Type 1 / Type 7
+143B	1	119	Type 1 / Type 9
+143B	1	119	Type 2 / Type 4
+143B	5	119	Obligatory double negation with optional triple negation
+143C	11	81	NegV(Neg)
+143C	20	81	(Neg)VNeg
+143C	5	81	Neg[V(-Neg)]
+143C	5	81	(Neg)[V-Neg]
+143C	3	81	[Neg-V](Neg)
+143C	2	81	[(Neg-)V]Neg
+143C	5	81	[Neg-V(-Neg)]
+143C	6	81	[(Neg-)V-Neg]
+143C	2	81	V(Neg)Neg
+143C	2	81	[V-Neg](Neg)
+143C	1	81	Neg(Neg)V
+143C	3	81	Neg[(Neg-)]V
+143C	1	81	NegV plus optional change to verb stem
+143C	2	81	NegV/[Neg-V-Neg]
+143C	1	81	VNeg/[Neg-V-Neg]
+143C	1	81	[Neg-V]/NegVNeg
+143C	1	81	NegV or NegativeTone&VNeg
+143C	4	81	NegV/[V-Neg]/Neg[V-Neg]
+143C	2	81	NegV/VNeg/NegVNeg
+143C	1	81	NegV/[V-Neg]/[Neg-V-Neg]
+143C	1	81	[Neg-V]/VNeg/[Neg-V-Neg]
+143C	1	81	NegV/[Neg-V]/Neg[Neg-V]
+143C	1	81	Optional double negation with optional triple negation
+143D	1	6	(Neg)[Neg-V-Neg]
+143D	1	6	[V-Neg]Neg with optional negative infix or prefix
+143D	1	6	NegVNeg/NegNegVNeg
+143D	1	6	(i) Neg[V-Neg] or (ii) NegVNeg with negative tone
+143D	1	6	Neg[V(-Neg)]Neg/[Neg-V(-Neg)]Neg
+143D	1	6	Neg[V-(Neg)](Neg)
+143E	681	1324	Preverbal negative word
+143E	230	1324	Negative prefix
+143E	23	1324	Both preverbal negative word and negative prefix
+143E	390	1324	No preverbal negative morpheme
+143F	288	1324	Postverbal negative word
+143F	307	1324	Negative suffix
+143F	18	1324	Both postverbal negative word and negative suffix
+143F	711	1324	No postverbal negative morpheme
+143G	7	1324	Negative tone
+143G	2	1324	Negative infix
+143G	1	1324	Negative stem change
+143G	1314	1324	No negative tone, infix or stem change
+144A	10	1189	NegSVO
+144A	112	1189	SNegVO
+144A	2	1189	SVNegO
+144A	81	1189	SVONeg
+144A	11	1189	NegSOV
+144A	15	1189	SNegOV
+144A	65	1189	SONegV
+144A	49	1189	SOVNeg
+144A	58	1189	NegVSO
+144A	1	1189	VSNegO
+144A	1	1189	VSONeg
+144A	18	1189	NegVOS
+144A	3	1189	ONegVS
+144A	1	1189	OVNegS
+144A	1	1189	OSVNeg
+144A	91	1189	More than one position for negative morpheme, with none dominant
+144A	1	1189	Optional single negation
+144A	101	1189	Obligatory double negation
+144A	67	1189	Optional double negation
+144A	333	1189	Morphological negation only (but not double negation)
+144A	168	1189	Other languages
+144B	44	609	At beginning of clause separated from verb
+144B	18	609	Preceding verb, separated from verb, but not at beginning of clause
+144B	339	609	Immediately preverbal
+144B	92	609	Immediately postverbal
+144B	1	609	Following verb, separated from verb, but not at end of clause
+144B	115	609	At end of clause, separated from verb
+144C	6	28	VSO, but NegSVO
+144C	3	28	SVO, but SNegOV
+144C	1	28	SVO, but SONegV
+144C	1	28	SVO, but SOVNeg
+144C	1	28	SVO, but NegVSO
+144C	1	28	SVO but SO[V-Neg]
+144C	1	28	SVO but SO[Neg-V]
+144C	1	28	OSV but NegSVO/O[Neg-V]S
+144C	1	28	SVO, but NegSNegOV
+144C	1	28	SVO, but SONeg[V-Neg]/SO[Neg-V-Neg]
+144C	1	28	SOV but SONeg[V-Neg]/S[Neg-V-Neg] O
+144C	1	28	SVO/VSO, but NegSVONeg
+144C	1	28	SVO/VSO, but [Neg-V]SO(Neg)
+144C	5	28	SVO/SOV, but SVONeg
+144C	1	28	SVO/SOV, but SNegVO
+144C	1	28	SVO/SOV, but SNegOV
+144C	1	28	SVO/SOV, but SOVNeg
+144D	4	463	NegSVO
+144D	111	463	SNegVO
+144D	2	463	SVNegO
+144D	81	463	SVONeg
+144D	67	463	S[Neg-V]O
+144D	12	463	S[V-Neg]O
+144D	1	463	SVO with tonal negation
+144D	6	463	VSO in affirmative clauses, but NegSVO
+144D	5	463	SVO/SOV in affirmative clauses, but SVONeg
+144D	1	463	SVO/SOV in affirmative clauses, but SNegVO
+144D	26	463	Other SVO with preverbal negative word
+144D	8	463	Other SVO with postverbal negative word
+144D	48	463	More than one negative construction
+144D	56	463	SVO with obligatory double negation
+144D	35	463	SVO with optional double negation
+144E	5	48	SNegVO/SVNegO
+144E	3	48	NegSVO/SNegVO
+144E	1	48	NegSVO/SVNegO
+144E	1	48	SNegVO/SVONeg
+144E	2	48	SVNegO/SVONeg
+144E	1	48	SVO & Flexible Neg
+144E	2	48	SNegVO/S[V-Neg]O
+144E	2	48	S[Neg-V]O/SVNegO
+144E	1	48	NegSVO/SNegVO/S[V-Neg]O
+144E	5	48	SNegVO/NegVSO
+144E	1	48	SVONeg/VSONeg
+144E	1	48	NegSVO/NegVOS
+144E	2	48	SNegVO/NegVOS
+144E	2	48	S[Neg-V]O/[Neg-V]OS
+144E	2	48	SVONeg/SONegV
+144E	1	48	SVNegO/SOVNeg
+144E	1	48	SVONeg/SNegOV/SOVNeg
+144E	1	48	NegSVO/SVNegO/NegSOV/SNegOV
+144E	1	48	SNegVO/SONegV/SVONeg/SOVNeg
+144E	1	48	S[Neg-V]O/SO[Neg-V]
+144E	2	48	S[V-Neg]O/SO[V-Neg]
+144E	1	48	SNegVO/SONegV/S[Neg-V]O/SO[Neg-V]
+144E	1	48	NegSVO/O[Neg-V]S
+144E	1	48	SVO & NegV/VNeg
+144E	2	48	SVO & NegV/[V-Neg]
+144E	2	48	SVO/VSO & NegV
+144E	2	48	SVO/VOS & NegV
+144E	1	48	SVO/SOV & NegV/VNeg
+144F	11	56	SNegVONeg
+144F	6	56	SNegVNegO
+144F	1	56	SVNegONeg
+144F	1	56	SVO/VSO in affirmative clauses but NegSVONeg
+144F	7	56	S[Neg-V]ONeg
+144F	4	56	SNeg[V-Neg]O
+144F	1	56	S[Neg-V]NegO
+144F	2	56	NegS[V-Neg]O
+144F	5	56	S[Neg-V-Neg]O
+144F	1	56	SVNegO with negative tone on verb
+144F	1	56	S[Neg-V]O with negative tone on verb
+144F	1	56	SNegNegVO/SNegVNegO
+144F	1	56	SNegVNegO/SNegVONeg
+144F	1	56	SNegVONeg/S[Neg-V]ONeg
+144F	1	56	(Neg)S(Neg)VONeg (at least one of the preverbal Negs)
+144F	1	56	SNeg[V-Neg]O and negative tone on verb / SNegVNegO
+144F	1	56	S(Neg)[Neg-V-Neg]O
+144F	1	56	SNeg[V(-Neg)]ONeg/S[Neg-V(-Neg)]ONeg
+144F	1	56	SNegVONeg/SNegOVNeg
+144F	1	56	SVONeg with negative tone on verb / SNegOVNeg
+144F	1	56	SNegVONeg/SVNegONeg/NegVOSNeg/VNegOSNeg
+144F	5	56	SVO & NegVNeg
+144F	1	56	S[Neg-V]O & NegV
+144G	6	35	SNegVO(Neg)
+144G	8	35	S(Neg)VONeg
+144G	3	35	S(Neg)VNegO
+144G	1	35	SNegV(Neg)O
+144G	2	35	(Neg)SVONeg
+144G	1	35	SVNegO(Neg)
+144G	1	35	NegS[V(-Neg)]O
+144G	1	35	S[(Neg-)V]NegO
+144G	2	35	S[Neg-V]O(Neg)
+144G	1	35	SNegVO or SVNegO with tone on verb
+144G	1	35	S(Neg)[V(-Neg)]O
+144G	2	35	S[Neg-V(-Neg)]O
+144G	1	35	(Neg)SVONeg/S(Neg)VONeg
+144G	1	35	S[Neg-V]O/NegSVNegO
+144G	1	35	SNeg[V-Neg]O/S[Neg-V-Neg]O
+144G	1	35	S[V(-Neg)]O & NegV
+144G	1	35	SVO/SOV & (Neg)[V-Neg]
+144G	1	35	SVO/VSO & NegV/VNeg/NegVNeg
+144H	19	420	Separate word, no double negation
+144H	1	420	Separate word, optional double negation, with NegSVO possible without a second negative
+144H	8	420	Separate word, only occurs with another negative morpheme
+144H	392	420	SVO but NegSVO does not occur
+144I	134	421	Separate word, no double negation
+144I	72	421	Prefix, no double negation
+144I	9	421	Separate word, optional double negation, with SNegVO possible without a second negative
+144I	5	421	Prefix, optional double negation, with SNegVO possible without a second negative
+144I	41	421	Separate word, only occurs with another negative morpheme
+144I	16	421	Prefix, only occurs with another negative morpheme
+144I	2	421	Type 1 / Type 2
+144I	142	421	SVO, but SNegVO does not occur
+144J	15	446	Separate word, no double negation
+144J	19	446	Suffix, no double negation
+144J	5	446	Separate word, optional double negation, with SVNegO possible without a second negative
+144J	2	446	Suffix, optional double negation, with SVNegO possible without a second negative
+144J	15	446	Separate word, only occurs with another negative morpheme
+144J	17	446	Suffix, only occurs with another negative morpheme
+144J	373	446	SVO, but SVNegO does not occur
+144K	95	446	Separate word, no double negation
+144K	12	446	Separate word, optional double negation, with SVONeg possible without a second negative
+144K	35	446	Separate word, only occurs with another negative morpheme
+144K	304	446	SVO but SVONeg does not occur
+144L	10	572	NegSOV
+144L	11	572	SNegOV
+144L	64	572	SONegV
+144L	48	572	SOVNeg
+144L	49	572	SO[Neg-V]
+144L	128	572	SO[V-Neg]
+144L	3	572	SNegOV but SVO in affirmative clauses
+144L	1	572	SONegV but SVO in affirmative clauses
+144L	1	572	SOVNeg but SVO in affirmative clauses
+144L	1	572	SO[V-Neg] but SVO in affirmative clauses
+144L	1	572	SO[Neg-V] but SVO in affirmative clauses
+144L	1	572	SNegOV but SVO/SOV in affirmative clauses
+144L	1	572	SOVNeg but SVO/SOV in affirmative clauses
+144L	56	572	Other SOV with preverbal negative word
+144L	54	572	More than one negative construction
+144L	45	572	SOV with obligatory double negation
+144L	31	572	SOV with optional double negation
+144L	13	572	SV & OV & NegV
+144L	8	572	SV & OV & VNeg
+144L	14	572	SV & OV & negative prefix
+144L	23	572	SV & OV & negative suffix
+144L	5	572	SV & OV with immediately preverbal negative word
+144L	4	572	SV & OV with clause-initial negative word
+144M	1	54	SONegV/SOVNeg
+144M	2	54	SNegOV/SONegV
+144M	4	54	NegSOV/SNegOV/SONegV
+144M	1	54	NegSOV or SOV with second position negative word
+144M	8	54	SOVNeg/SO[V-Neg]
+144M	6	54	SO[Neg-V]/SO[V-Neg]
+144M	1	54	SO[Neg-V] or SOV with negative infix
+144M	1	54	SNegOV/SONegV/SO[V-Neg]
+144M	2	54	SONegV/SVONeg
+144M	1	54	SOVNeg/SVNegO
+144M	1	54	SNegOV/SOVNeg/SVONeg
+144M	1	54	NegSOV/SNegOV/NegSVO/SVNegO
+144M	1	54	SONegV/SOVNeg/SNegVO/SVONeg
+144M	1	54	SO[Neg-V]/S[Neg-V]O
+144M	2	54	SO[V-Neg]/S[V-Neg]O/
+144M	1	54	SONegV/SO[Neg-V]/SNegVO/S[Neg-V]O
+144M	1	54	NegSOV/NegOVS
+144M	1	54	SOVNeg/OVNegS
+144M	1	54	SO[V-Neg]/O[V-Neg]S
+144M	5	54	SOV & NegV/VNeg
+144M	3	54	SOV & NegV/[Neg-V]
+144M	2	54	SOV & NegV/[V-Neg]
+144M	1	54	SOV & NegV/VNeg
+144M	2	54	SV & OV & NegV/VNeg
+144M	1	54	SV & OV & NegV/[V-Neg]
+144M	2	54	SV & OV & [Neg-V]/[V-Neg]
+144M	1	54	SV & OV & VNeg/[V-Neg]
+144N	1	45	SONegVNeg
+144N	1	45	NegSNegOV but SVO in affirmative clauses
+144N	4	45	NegSO[V-Neg]
+144N	2	45	SONeg[V-Neg]
+144N	1	45	SO[Neg-V]Neg
+144N	13	45	SO[Neg-V-Neg]
+144N	1	45	SO[Neg-V] with negative tone on verb SO[Neg-V]&NegTone
+144N	1	45	SONegVNeg/SONeg[V-Neg]
+144N	1	45	SONeg[V-Neg]/SO[Neg-V-Neg] but SVO in affirmative clauses
+144N	2	45	SNegO[V-Neg]/SONeg[V-Neg]
+144N	1	45	SO[V-Neg]Neg with optional negative prefix or infix
+144N	1	45	SNegOVNeg/SNegVONeg
+144N	1	45	SNegOVNeg or SVONeg with negative tone on verb
+144N	3	45	SOV & NegVNeg
+144N	7	45	SOV & Neg[V-Neg]
+144N	1	45	SOV & Neg[Neg-V]
+144N	2	45	SV & OV & Neg[V-Neg]
+144N	2	45	SV & OV & [Neg-V-Neg]
+144O	1	31	NegSOV(Neg)
+144O	3	31	S(Neg)OVNeg
+144O	1	31	SNegOV(Neg)
+144O	1	31	SNegO[V(-Neg)]
+144O	1	31	SO[(Neg-)V]Neg
+144O	2	31	SO[Neg-V(-Neg)]
+144O	3	31	SO[(Neg-)V-Neg]
+144O	2	31	SO[V-Neg](Neg)
+144O	1	31	SOVNeg/SO[Neg-V-Neg]
+144O	1	31	SNegO[V(-Neg)](Neg)
+144O	1	31	S[Neg-V-Neg]O/SO[V-Neg] but SOV in affirmative clauses
+144O	1	31	SO[Neg-V-(Neg)]/SOVNeg
+144O	3	31	(Neg)SOVNeg/S(Neg)OVNeg/SO(Neg)VNeg
+144O	1	31	S(Neg)O[V(-Neg)]/SO(Neg)[V(-Neg)]
+144O	2	31	SOV & (Neg)[V-Neg]
+144O	1	31	SOV & (Neg)[V(-Neg)]
+144O	1	31	SOV/SVO & Neg[V-(Neg)]
+144O	1	31	SV & OV & (Neg)V(Neg)
+144O	1	31	SV & OV & (Neg)[V-Neg]
+144O	1	31	SV & OV & [Neg-V(-Neg)]
+144O	2	31	SV & OV & [(Neg-)V-Neg]
+144P	18	408	Separate word, no double negation
+144P	1	408	Separate word, optional double negation, with NegSOV possible without a second negative
+144P	8	408	Separate word, only occurs with another negative morpheme
+144P	381	408	SOV but NegSOV does not occur
+144Q	25	408	Separate word, no double negation
+144Q	4	408	Separate word, optional double negation, with SNegOV possible without a second negative
+144Q	11	408	Separate word, only occurs with another negative morpheme
+144Q	368	408	SOV but SNegOV does not occur
+144R	76	411	Separate word, no double negation
+144R	60	411	Prefix, no double negation
+144R	1	411	Separate word, optional double negation, with SONegV possible without a second negative
+144R	3	411	Prefix, optional double negation, with SONegV possible without a second negative
+144R	11	411	Separate word, only occurs with another negative morpheme
+144R	21	411	Prefix, only occurs with another negative morpheme
+144R	1	411	Type 1 / Type 2
+144R	238	411	SOV, but SONegV does not occur
+144S	60	489	Separate word, no double negation
+144S	142	489	Suffix, no double negation
+144S	7	489	Separate word, optional double negation, with SONegV possible without a second negative
+144S	8	489	Suffix, optional double negation, with SONegV possible without a second negative
+144S	10	489	Separate word, only occurs with another negative morpheme
+144S	32	489	Suffix, only occurs with another negative morpheme
+144S	8	489	Type 1 / Type 2
+144S	2	489	Type 1 / Type 6
+144S	2	489	Type 5 / Type 4
+144S	2	489	Type 5 / Type 6
+144S	216	489	SOV, but SOVNeg does not occur
+144T	57	152	NegVSO
+144T	1	152	VSNegO
+144T	1	152	VSONeg
+144T	18	152	NegVOS
+144T	11	152	NegVSO/NegVOS
+144T	16	152	NegV & VS & VO
+144T	1	152	NegVSO but SVO in affirmative clauses
+144T	7	152	VSO with negative prefix
+144T	2	152	VOS with negative prefix
+144T	1	152	VOS with negative suffix
+144T	1	152	[V-Neg] & VS &VO
+144T	2	152	NegVSO/[Neg-V]SO
+144T	1	152	NegVOS/[Neg-V]OS
+144T	5	152	NegVSO/SNegVO
+144T	1	152	VSONeg/SVONeg
+144T	1	152	NegVOS/NegSVO
+144T	2	152	NegVOS/SNegVO
+144T	2	152	[Neg-V]OS/S[Neg-V]O
+144T	2	152	NegV & VSO/SVO
+144T	2	152	NegV & VOS/SVO
+144T	1	152	Verb-initial with optional single negation
+144T	7	152	Verb-initial with obligatory double negation
+144T	10	152	Verb-initial with optional double negation
+144U	1	17	NegVNegSO
+144U	1	17	NegVNegOS
+144U	1	17	NegVSONeg
+144U	1	17	NegNegVSO
+144U	1	17	VNegSONeg
+144U	1	17	VS & VO & [Neg-V-Neg]
+144U	1	17	NegVOSNeg/VNegOSNeg/SNegVONeg/SVNegONeg
+144U	1	17	V(Neg)SONeg
+144U	1	17	Neg(Neg)VSO
+144U	1	17	NegVSO/[Neg-V-Neg]SO
+144U	1	17	NegVSO with optional stem change
+144U	1	17	[Neg-V]SO(Neg) but SVO/VSO in affirmative clauses
+144U	2	17	VS & VO & Neg[(Neg-)V]
+144U	1	17	VS & VO & NegV/[(Neg-)V-Neg]
+144U	1	17	VOS & NegVNeg
+144U	1	17	VSO/SVO & (Neg)V(Neg)
+144V	117	152	Separate word, no double negation Word&NoDoubleNeg
+144V	11	152	Prefix, no double negation Prefix&NoDoubleNeg
+144V	6	152	Separate word, optional single or double negation, with preverbal negative word possible without a second negative
+144V	1	152	Prefix, optional double negation, with negative prefix possible without a second negative
+144V	4	152	Separate word, only occurs with another negative morpheme
+144V	1	152	Prefix, only occurs with another negative morpheme
+144V	4	152	Type 1 / Type 2
+144V	1	152	Type 3 / Type 6
+144V	7	152	Verb-initial but preverbal negative does not occur
+144W	2	151	Suffix, no double negation
+144W	5	151	Separate word, immediately following verb, only occurs with another negative morpheme
+144W	1	151	Suffix, optional double negation, can occur without a second negative
+144W	3	151	Suffix, only occurs with another negative morpheme
+144W	1	151	Separate word, between subject and object
+144W	139	151	Verb-initial but immediately postverbal negative or negative between subject and object does not occur
+144X	2	151	Separate word, no double negation
+144X	1	151	Separate word, optional double negation, with clause-final negative word possible without a second negative
+144X	4	151	Separate word, only occurs with another negative morpheme
+144X	144	151	Verb-initial but clause-final negative does not occur
+144Y	3	16	ONegVS
+144Y	1	16	OVNegS
+144Y	1	16	OSVNeg
+144Y	4	16	O[V-Neg]S
+144Y	1	16	OS(Neg)[V(-Neg)]
+144Y	1	16	O[Neg-V-Neg]S
+144Y	1	16	OVNegS/SOVNeg
+144Y	1	16	NegOVS/NegSOV
+144Y	1	16	O[V-Neg]S/SO[V-Neg]
+144Y	1	16	O[Neg-V]S/NegSVO
+144Y	1	16	OVS & NegV

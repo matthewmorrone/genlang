@@ -98,6 +98,9 @@ Object.prototype.define("fastProps", function() {
     return this
     eval(this)
 })
+Object.prototype.define("size", function() {
+    return Object.keys(this).length
+})
 Object.prototype.define("merge", function(source, options) {
     let target = this
     if (!source) {
@@ -571,6 +574,10 @@ String.prototype.define("repeat", function(num) {
         result += this
     }
     return result
+})
+
+String.prototype.define('toTitleCase', function() {
+	return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase()
 })
 Array.define("equal", function(a, b) {
     if (a.length !== b.length) {
