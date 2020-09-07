@@ -985,6 +985,15 @@ Object.prototype.define("print", function() {
     console.log(util.inspect(this, false, null, true /* enable colors */))
 })
 
+Object.prototype.define("filter", function(obj, predicate) {
+    let result = {}, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key) && !predicate(obj[key])) {
+            result[key] = obj[key];
+        }
+    }
+    return result;
+})
 
 
 global.define("end", function(){
