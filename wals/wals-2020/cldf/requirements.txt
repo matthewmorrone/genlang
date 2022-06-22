@@ -20,7 +20,7 @@ lingpy==2.6.6
 Markdown==3.1.1
 networkx==2.1
 -e git+https://github.com/glottobank/python-newick.git@6db59453a4f9a4280e7b89ef39792f0790b7f948#egg=newick
-numpy==1.15.4
+numpy==1.22.0
 openpyxl==2.6.4
 packaging==20.1
 pathlib2==2.3.5
