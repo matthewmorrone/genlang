@@ -1,5 +1,5 @@
 appdirs==1.4.3
-certifi==2018.4.16
+certifi==2022.12.7
 chardet==3.0.4
 -e git+https://github.com/cldf/cldfbench.git@c42a444fde92dc117d0b1c5e11f6866cd0ce0faa#egg=cldfbench
 -e git+https://github.com/cldf-datasets/dplacetrees.git@4c58f9b0da798e019014656b88c1dfe5cdd35e0f#egg=cldfbench_dplacetrees
