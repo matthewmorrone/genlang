@@ -1,0 +1,273 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.char {
+    background: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 2em;
+    min-width: 3em;
+}
+
+.char.selected {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    gap: 2px;
+    background: #ddd;
+}
+
+.ipa-cons {
+    grid-template-columns: repeat(14, 3em);
+}
+
+.ipa-vowel-grid {
+    grid-template-columns: repeat(6, 3em);
+}
+
+.tag-editor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
+    min-height: 40px;
+    cursor: text;
+    margin-bottom: 1em;
+}
+
+.tag {
+    background: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-input {
+    flex-grow: 1;
+    min-width: 60px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#output {
+    white-space: pre-wrap;
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.tone-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.tone-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+    gap: 5px;
+    min-width: 60px;
+}
+
+.tone-button.active {
+    background: #00c389;
+    color: white;
+    border-color: #00a176;
+    font-weight: bold;
+}
+
+.tone-button[contenteditable="true"]:focus {
+    outline: 2px solid #007bff;
+}
+
+.tone-description {
+    margin-left: 4px;
+    color: #333;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.ipa-btn {
+    background: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    min-width: 2em;
+    min-height: 2em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.ipa-btn.selected {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.ipa-header-rot {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    vertical-align: bottom;
+    text-align: left;
+    height: 6em;
+    padding: 0 0.2em;
+}
+
+.hide {
+    display: none;
+}
+
+#prosody-rules-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.prosody-col {
+    flex: 1 1 0;
+    min-width: 0;
+    overflow: auto;
+    word-break: break-word;
+}
+
+.prosody-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.prosody-col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#ipa-tables-row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+/* Remove any other inline style rules from HTML and move here as needed */
+
+#language-features {
+  margin: 2em 0 1em 0;
+  padding: 1em;
+  background: #f8f8fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  max-width: 420px;
+}
+#language-features h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+#features-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#features-table th {
+  text-align: left;
+  font-weight: 500;
+  color: #555;
+  padding: 0.3em 0.7em 0.3em 0;
+  width: 60%;
+}
+#features-table td {
+  color: #222;
+  padding: 0.3em 0.2em;
+}
+
+#diphthong-row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#diphthong-tagEditor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
+    min-height: 40px;
+    cursor: text;
+    margin-bottom: 0.5em;
+    gap: 2px;
+}
+#diphthong-row label {
+    margin-right: 0.5em;
+}
+#diphthong-row .tag-input {
+    min-width: 60px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+#diphthong-row .tag {
+    background: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin: 2px;
+}
+#diphthong-row .tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#diphthong-row span[style] {
+    font-size: 0.9em !important;
+    color: #888 !important;
+    margin-left: 0.5em;
+}

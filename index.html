@@ -5,469 +5,426 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conlang Generator</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-            background: #f5f5f5;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        .char {
-            background: white;
-            border: 1px solid #ccc;
-            text-align: center;
-            cursor: pointer;
-            user-select: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 2em;
-            min-width: 3em;
-        }
-
-        .char.selected {
-            background: #007bff;
-            color: white;
-            font-weight: bold;
-        }
-
-        .grid {
-            display: grid;
-            gap: 2px;
-            background: #ddd;
-        }
-
-        .ipa-cons {
-            grid-template-columns: repeat(14, 3em);
-        }
-
-        .ipa-vowel-grid {
-            grid-template-columns: repeat(6, 3em);
-        }
-
-        .tag-editor {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 5px;
-            background: white;
-            min-height: 40px;
-            cursor: text;
-            margin-bottom: 1em;
-        }
-
-        .tag {
-            background: #007bff;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 10px;
-            display: inline-flex;
-            align-items: center;
-            margin: 2px;
-        }
-
-        .tag button {
-            background: none;
-            border: none;
-            color: white;
-            margin-left: 5px;
-            cursor: pointer;
-        }
-
-        .tag-input {
-            flex-grow: 1;
-            min-width: 60px;
-            border: none;
-            outline: none;
-            font-size: 1rem;
-        }
-
-        #output {
-            white-space: pre-wrap;
-            margin-top: 20px;
-            padding: 10px;
-            background: white;
-            border: 1px solid #ccc;
-        }
-
-        .tone-box {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-            max-width: 600px;
-        }
-
-        .tone-button {
-            display: flex;
-            align-items: center;
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            background: #eee;
-            cursor: pointer;
-            gap: 5px;
-            min-width: 60px;
-        }
-
-        .tone-button.active {
-            background: #00c389;
-            color: white;
-            border-color: #00a176;
-            font-weight: bold;
-        }
-
-        .tone-button[contenteditable="true"]:focus {
-            outline: 2px solid #007bff;
-        }
-
-        .tone-description {
-            margin-left: 4px;
-            color: #333;
-            font-style: italic;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1>Conlang Generator</h1>
-
-    <h2>IPA Consonants</h2>
-
-    <table>
-        <caption>IPA Pulmonic Consonant Chart</caption>
-        <thead>
-            <tr>
-                <th>Manner \ Place</th>
-                <th colspan="2">Bilabial</th>
-                <th colspan="2">Labiodental</th>
-                <th colspan="2">Dental</th>
-                <th colspan="2">Alveolar</th>
-                <th colspan="2">Postalveolar</th>
-                <th colspan="2">Retroflex</th>
-                <th colspan="2">Palatal</th>
-                <th colspan="2">Velar</th>
-                <th colspan="2">Uvular</th>
-                <th colspan="2">Pharyngeal</th>
-                <th colspan="2">Glottal</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Plosive</th>
-                <td>p</td>
-                <td>b</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>t</td>
-                <td>d</td>
-                <td></td>
-                <td></td>
-                <td>ʈ</td>
-                <td>ɖ</td>
-                <td>c</td>
-                <td>ɟ</td>
-                <td>k</td>
-                <td>ɡ</td>
-                <td>q</td>
-                <td>ɢ</td>
-                <td></td>
-                <td></td>
-                <td colspan="2">ʔ</td>
-            </tr>
-            <tr>
-                <th>Nasal</th>
-                <td></td>
-                <td>m</td>
-                <td></td>
-                <td>ɱ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>n</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɳ</td>
-                <td></td>
-                <td>ɲ</td>
-                <td></td>
-                <td>ŋ</td>
-                <td></td>
-                <td>ɴ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Trill</th>
-                <td></td>
-                <td>ʙ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>r</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ʀ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Tap/Flap</th>
-                <td>ⱱ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɾ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɽ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Fricative</th>
-                <td>ɸ</td>
-                <td>β</td>
-                <td>f</td>
-                <td>v</td>
-                <td>θ</td>
-                <td>ð</td>
-                <td>s</td>
-                <td>z</td>
-                <td>ʃ</td>
-                <td>ʒ</td>
-                <td>ʂ</td>
-                <td>ʐ</td>
-                <td>ç</td>
-                <td>ʝ</td>
-                <td>x</td>
-                <td>ɣ</td>
-                <td>χ</td>
-                <td>ʁ</td>
-                <td>ħ</td>
-                <td>ʕ</td>
-                <td>h</td>
-                <td>ɦ</td>
-            </tr>
-            <tr>
-                <th>Lat. Fricative</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɬ</td>
-                <td>ɮ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Approximant</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɹ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɻ</td>
-                <td></td>
-                <td>j</td>
-                <td></td>
-                <td>ɰ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>Lat. Approximant</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>l</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>ɭ</td>
-                <td></td>
-                <td>ʎ</td>
-                <td></td>
-                <td>ʟ</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="consonantGrid" class="grid ipa-cons"></div>
-
-    <h2>IPA Vowels</h2>
-    <table>
-        <caption>IPA Vowel Chart (Monophthongs)</caption>
-        <thead>
-            <tr>
-                <th>Height \ Backness</th>
-                <th>Front</th>
-                <th>Central</th>
-                <th>Back</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>High</th>
-                <td>i<br>y</td>
-                <td>ɨ<br>ʉ</td>
-                <td>ɯ<br>u</td>
-            </tr>
-            <tr>
-                <th>High-mid</th>
-                <td>e<br>ø</td>
-                <td>ɘ<br>ɵ</td>
-                <td>ɤ<br>o</td>
-            </tr>
-            <tr>
-                <th>Mid</th>
-                <td>[e̞]<br>[ø̞]</td>
-                <td>ə</td>
-                <td>[o̞]<br>[ɤ̞]</td>
-            </tr>
-            <tr>
-                <th>Low-mid</th>
-                <td>ɛ<br>œ</td>
-                <td>ɜ<br>ɞ</td>
-                <td>ʌ<br>ɔ</td>
-            </tr>
-            <tr>
-                <th>Low</th>
-                <td>æ</td>
-                <td>a<br>ɐ</td>
-                <td>ɑ<br>ɒ</td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="vowelGrid" class="grid ipa-vowel-grid"></div>
-
-    <h2>Stress and Prosody</h2>
-    <p>
-        <label>Accent System:
-            <select id="accentType" onchange="updateAccentUI()">
-                <option value="stress" selected>Stress</option>
-                <option value="tone">Tone</option>
+    <label for="language-select"><strong>Choose a language:</strong></label>
+    <select id="language-select"></select>
+    <button id="toggle-affricates" class="collapsible-toggle" type="button">Show Affricates</button>
+    <button id="toggle-glides" class="collapsible-toggle" type="button">Show Glides</button>
+    <button id="toggle-nonpulmonic" class="collapsible-toggle" type="button">Show Nonpulmonic</button>
+    <div id="ipa-tables-row">
+        <table id="consonantTable">
+            <caption>
+                <h2>Consonants</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th class="hide"></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Bilabial</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Labiodental</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Dental</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Alveolar</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Postalveolar</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Alveolo-palatal</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Retroflex</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Palatal</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Velar</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Uvular</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Pharyngeal</span></th>
+                    <th colspan="2" class="hide"><span class="ipa-header-rot">Glottal</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="hide">Plosive</th>
+                    <td class="ipa-btn">p</td>
+                    <td class="ipa-btn">b</td>
+                    <td class="ipa-btn">p̪</td>
+                    <td class="ipa-btn">b̪</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">t</td>
+                    <td class="ipa-btn">d</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ʈ</td>
+                    <td class="ipa-btn">ɖ</td>
+                    <td class="ipa-btn">c</td>
+                    <td class="ipa-btn">ɟ</td>
+                    <td class="ipa-btn">k</td>
+                    <td class="ipa-btn">g</td>
+                    <td class="ipa-btn">q</td>
+                    <td class="ipa-btn">ɢ</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ʔ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Nasal</th>
+                    <td class="ipa-btn">m̥</td>
+                    <td class="ipa-btn">m</td>
+                    <td class="ipa-btn">ɱ̥</td>
+                    <td class="ipa-btn">ɱ</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">n̥</td>
+                    <td class="ipa-btn">n</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɳ̊</td>
+                    <td class="ipa-btn">ɳ</td>
+                    <td class="ipa-btn">ɲ̊</td>
+                    <td class="ipa-btn">ɲ</td>
+                    <td class="ipa-btn">ŋ̊</td>
+                    <td class="ipa-btn">ŋ</td>
+                    <td class="ipa-btn">ɴ̥</td>
+                    <td class="ipa-btn">ɴ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Trill</th>
+                    <td class="ipa-btn">ʙ̥</td>
+                    <td class="ipa-btn">ʙ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">r̥</td>
+                    <td class="ipa-btn">r</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ʀ̥</td>
+                    <td class="ipa-btn">ʀ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Tap/Flap</th>
+                    <td class="ipa-btn">ⱱ̥</td>
+                    <td class="ipa-btn">ⱱ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɾ̥</td>
+                    <td class="ipa-btn">ɾ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɽ̊</td>
+                    <td class="ipa-btn">ɽ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Fricative</th>
+                    <td class="ipa-btn">ɸ</td>
+                    <td class="ipa-btn">β</td>
+                    <td class="ipa-btn">f</td>
+                    <td class="ipa-btn">v</td>
+                    <td class="ipa-btn">θ</td>
+                    <td class="ipa-btn">ð</td>
+                    <td class="ipa-btn">s</td>
+                    <td class="ipa-btn">z</td>
+                    <td class="ipa-btn">ʃ</td>
+                    <td class="ipa-btn">ʒ</td>
+                    <td class="ipa-btn">ɕ</td>
+                    <td class="ipa-btn">ʑ</td>
+                    <td class="ipa-btn">ʂ</td>
+                    <td class="ipa-btn">ʐ</td>
+                    <td class="ipa-btn">ç</td>
+                    <td class="ipa-btn">ʝ</td>
+                    <td class="ipa-btn">x</td>
+                    <td class="ipa-btn">ɣ</td>
+                    <td class="ipa-btn">χ</td>
+                    <td class="ipa-btn">ʁ</td>
+                    <td class="ipa-btn">ħ</td>
+                    <td class="ipa-btn">ʕ</td>
+                    <td class="ipa-btn">h</td>
+                    <td class="ipa-btn">ɦ</td>
+                </tr>
+                <tr>
+                    <th class="hide">Lat. Fricative</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɬ</td>
+                    <td class="ipa-btn">ɮ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Approximant</th>
+                    <td class="ipa-btn">ʋ̥</td>
+                    <td class="ipa-btn">ʋ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɹ̥</td>
+                    <td class="ipa-btn">ɹ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɻ̥</td>
+                    <td class="ipa-btn">ɻ</td>
+                    <td class="ipa-btn">j̊</td>
+                    <td class="ipa-btn">j</td>
+                    <td class="ipa-btn">ɰ̥</td>
+                    <td class="ipa-btn">ɰ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="hide">Lat. Approximant</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">l̥</td>
+                    <td class="ipa-btn">l</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="ipa-btn">ɭ̥</td>
+                    <td class="ipa-btn">ɭ</td>
+                    <td class="ipa-btn">ʎ̥</td>
+                    <td class="ipa-btn">ʎ</td>
+                    <td class="ipa-btn">ʟ̥</td>
+                    <td class="ipa-btn">ʟ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="vowelTable">
+            <caption>
+                <h2>Vowels</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th class="hide"></th>
+                    <th colspan=2 class="hide">Front</th>
+                    <th colspan=2 class="hide">Central</th>
+                    <th colspan=2 class="hide">Back</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="hide">High</th>
+                    <td class="ipa-btn">i</td>
+                    <td class="ipa-btn">y</td>
+                    <td class="ipa-btn">ɨ</td>
+                    <td class="ipa-btn">ʉ</td>
+                    <td class="ipa-btn">ɯ</td>
+                    <td class="ipa-btn">u</td>
+                </tr>
+                <tr>
+                    <th class="hide">High-mid</th>
+                    <td class="ipa-btn">e</td>
+                    <td class="ipa-btn">ø</td>
+                    <td class="ipa-btn">ɘ</td>
+                    <td class="ipa-btn">ɵ</td>
+                    <td class="ipa-btn">ɤ</td>
+                    <td class="ipa-btn">o</td>
+                </tr>
+                <tr>
+                    <th class="hide">Mid</th>
+                    <td class="ipa-btn">e̞</td>
+                    <td class="ipa-btn">ø̞</td>
+                    <td class="ipa-btn" colspan=2>ə</td>
+                    <td class="ipa-btn">o̞</td>
+                    <td class="ipa-btn">ɤ̞</td>
+                </tr>
+                <tr>
+                    <th class="hide">Low-mid</th>
+                    <td class="ipa-btn">ɛ</td>
+                    <td class="ipa-btn">œ</td>
+                    <td class="ipa-btn">ɜ</td>
+                    <td class="ipa-btn">ɞ</td>
+                    <td class="ipa-btn">ʌ</td>
+                    <td class="ipa-btn">ɔ</td>
+                </tr>
+                <tr>
+                    <th class="hide">Low</th>
+                    <td class="ipa-btn">æ</td>
+                    <td class="ipa-btn">a</td>
+                    <td class="ipa-btn" colspan=2>ɐ</td>
+                    <td class="ipa-btn">ɑ</td>
+                    <td class="ipa-btn">ɒ</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- NEW: Glides chart -->
+        <table id="glideTable" style="margin-top:1em;">
+            <caption>
+                <h2>Glides</h2>
+            </caption>
+            <tbody>
+                <tr>
+                    <td class="ipa-btn">j</td>
+                    <td class="ipa-btn">w</td>
+                    <td class="ipa-btn">ɥ</td>
+                    <td class="ipa-btn">ɰ</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- NEW: Nonpulmonic consonants chart -->
+        <table id="nonpulmonicTable" style="margin-top:1em;">
+            <caption>
+                <h2>Nonpulmonic Consonants</h2>
+            </caption>
+            <tbody>
+                <tr>
+                    <td class="ipa-btn">ʘ</td>
+                    <td class="ipa-btn">ǀ</td>
+                    <td class="ipa-btn">ǃ</td>
+                    <td class="ipa-btn">ǂ</td>
+                    <td class="ipa-btn">ǁ</td>
+                    <td class="ipa-btn">ɓ</td>
+                    <td class="ipa-btn">ɗ</td>
+                    <td class="ipa-btn">ʄ</td>
+                    <td class="ipa-btn">ɠ</td>
+                    <td class="ipa-btn">ʛ</td>
+                    <td class="ipa-btn">ʼ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="prosody-rules-row" style="display: flex; flex-direction: row; gap: 32px; align-items: flex-start; margin-bottom: 1.5em;">
+        <div class="prosody-col">
+            <h2>Stress and Prosody</h2>
+            <p>
+                <label>Accent System:
+                    <select id="accentType" onchange="updateAccentUI()">
+                        <option value="stress" selected>Stress</option>
+                        <option value="tone">Tone</option>
+                    </select>
+                </label>
+            </p>
+            <div id="stressSettings">
+                <p><label><input type="checkbox" id="enableStress" checked> Mark stress</label></p>
+                <p>
+                    <label>Stress Rule:
+                        <select id="stressRule">
+                            <option value="first">First syllable</option>
+                            <option value="last">Last syllable</option>
+                            <option value="penult">Penultimate syllable</option>
+                            <option value="variable">Variable</option>
+                        </select>
+                    </label>
+                </p>
+            </div>
+        </div>
+        <div class="prosody-col">
+            <h2>Tone System</h2>
+            <select id="toneCount" onchange="updateToneOptions()">
+                <option value="0">No tones</option>
+                <option value="1">1 tone</option>
+                <option value="2">2 tones</option>
+                <option value="3" selected>3 tones</option>
+                <option value="4">4 tones</option>
+                <option value="5">5 tones</option>
             </select>
-        </label>
-    </p>
-    <div id="stressSettings">
-        <p><label><input type="checkbox" id="enableStress" checked> Mark stress</label></p>
-        <p>
-            <label>Stress Rule:
-                <select id="stressRule">
-                    <option value="first">First syllable</option>
-                    <option value="last">Last syllable</option>
-                    <option value="penult">Penultimate syllable</option>
+            <div id="toneOptions" class="tone-box"></div>
+        </div>
+        <div class="prosody-col">
+            <h2>Phonotactic Rules</h2>
+            <div id="tagEditor" class="tag-editor">
+                <span contenteditable="true" class="tag-input" id="tagInput"></span>
+            </div>
+            <p>
+                <label>Syllables:
+                    <input type="number" id="syllableCount" value="1" min="1" max="10">
+                </label>
+            </p>
+            <p>
+                <label>Onset:
+                    <input type="text" id="onsetConstraint" value="C">
+                </label>
+                <label>Nucleus:
+                    <input type="text" id="nucleusConstraint" value="V">
+                </label>
+                <label>Coda:
+                    <input type="text" id="codaConstraint" value="(C)">
+                </label>
+            </p>
+        </div>
+        <div class="prosody-col">
+            <h2>Language Typology</h2>
+            <select id="typology">
+                <option value="isolating">Isolating</option>
+                <option value="agglutinative">Agglutinative</option>
+                <option value="fusional">Fusional</option>
+                <option value="polysynthetic">Polysynthetic</option>
+            </select>
+            <label style="display:block; margin-top:1em;">Word Order:
+                <select id="wordOrder">
+                    <option value="SVO">SVO</option>
+                    <option value="SOV">SOV</option>
+                    <option value="VSO">VSO</option>
+                    <option value="VOS">VOS</option>
+                    <option value="OVS">OVS</option>
+                    <option value="OSV">OSV</option>
                 </select>
             </label>
-        </p>
+        </div>
     </div>
-    <h2>Tone System</h2>
-    <select id="toneCount" onchange="updateToneOptions()">
-        <option value="0">No tones</option>
-        <option value="1">1 tone</option>
-        <option value="2">2 tones</option>
-        <option value="3" selected>3 tones</option>
-        <option value="4">4 tones</option>
-        <option value="5">5 tones</option>
-    </select>
-    <div id="toneOptions" class="tone-box"></div>
-
-    <h2>Phonotactic Rules</h2>
-    <p><label><input type="checkbox" id="allowClusters" checked> Allow consonant clusters</label></p>
-    <p>
-        <label>Syllables:
-            <input type="number" id="syllableCount" value="1" min="1" max="10">
-        </label>
-    </p>
-    <p>
-        <label>Onset:
-            <input type="text" id="onsetConstraint" value="C">
-        </label>
-        <label>Nucleus:
-            <input type="text" id="nucleusConstraint" value="V">
-        </label>
-        <label>Coda:
-            <input type="text" id="codaConstraint" value="(C)">
-        </label>
-    </p>
-    <div id="tagEditor" class="tag-editor">
-        <span class="tag-input" id="tagInput" contenteditable="true"></span>
+    <div id="language-features" class="feature-panel">
+        <h3>Typological Features</h3>
+        <table id="features-table">
+            <tbody>
+                <!-- Feature rows will be populated by JS -->
+            </tbody>
+        </table>
     </div>
-
-    <h2>Language Typology</h2>
-    <select id="typology">
-        <option value="isolating">Isolating</option>
-        <option value="agglutinative">Agglutinative</option>
-        <option value="fusional">Fusional</option>
-        <option value="polysynthetic">Polysynthetic</option>
-    </select>
-
     <h2>Output Types</h2>
     <select id="outputType" multiple>
         <option value="swadesh">Swadesh List</option>
@@ -476,272 +433,11 @@
     </select>
     <br>
     <button onclick="generateConlang()">Generate Conlang</button>
+    <button id="generateFromWALS" style="margin-left:10px">Generate from WALS/PHOIBLE</button>
+    <button id="randomize-features" type="button">Randomize Features by WALS Frequency</button>
     <div id="output"></div>
-    <script>
-        const consonantGrid = [
-            ['p', 'b', 't', 'd', 'ʈ', 'ɖ', 'c', 'ɟ', 'k', 'g', 'q', 'ɢ', 'ʔ', ''],
-            ['m̥', 'm', 'n̥', 'n', 'ɳ̥', 'ɳ', 'ɲ̥', 'ɲ', 'ŋ̊', 'ŋ', 'ɴ̥', 'ɴ', '', ''],
-            ['ʙ̥', 'ʙ', 'r̥', 'r', '', '', '', '', '', '', 'ʀ̥', 'ʀ', '', ''],
-            ['ⱱ̥', 'ⱱ', 'ɾ̥', 'ɾ', '', '', '', '', '', '', '', '', '', ''],
-            ['ɸ', 'β', 'f', 'v', 'θ', 'ð', 's', 'z', 'ʃ', 'ʒ', 'χ', 'ʁ', 'h', 'ɦ'],
-            ['', '', '', '', '', '', 'ɬ', 'ɮ', '', '', '', '', '', ''],
-            ['ʋ̥', 'ʋ', '', '', '', '', 'j̊', 'j', 'ɰ̥', 'ɰ', '', '', '', ''],
-            ['', '', '', '', '', '', 'l̥', 'l', 'ʎ̥', 'ʎ', '', '', '', '']
-        ];
-
-        const vowelMatrix = [
-            ['i', 'y', 'ɨ', 'ʉ', 'ɯ', 'u'],
-            ['ɪ', 'ʏ', '', '', '', 'ʊ'],
-            ['e', 'ø', 'ɘ', 'ɵ', 'ɤ', 'o'],
-            ['', '', 'ə', '', '', ''],
-            ['ɛ', 'œ', 'ɜ', 'ɞ', 'ʌ', 'ɔ'],
-            ['æ', '', 'ɐ', '', '', ''],
-            ['a', 'ɶ', '', '', 'ɑ', 'ɒ']
-        ];
-
-        const selectedConsonants = new Set();
-        const selectedVowels = new Set();
-        let phonotacticRules = [];
-        let selectedTones = new Set();
-        const defaultTones = [
-            { tone: '˥', description: 'High' },
-            { tone: '˧', description: 'Mid' },
-            { tone: '˩', description: 'Low' },
-            { tone: '˩˥', description: 'Rising' },
-            { tone: '˥˩', description: 'Falling' },
-            { tone: '˩˧˩', description: 'Dipping' }
-        ];
-
-        function populateGrid(containerId, matrix, selectedSet) {
-            const container = document.getElementById(containerId);
-            container.innerHTML = '';
-            matrix.forEach(row => {
-                row.forEach(cell => {
-                    const div = document.createElement('div');
-                    div.className = 'char';
-                    if (cell) {
-                        div.textContent = cell;
-                        div.onclick = () => {
-                            div.classList.toggle('selected');
-                            selectedSet.has(cell) ? selectedSet.delete(cell) : selectedSet.add(cell);
-                        };
-                    } else {
-                        div.style.border = 'none';
-                    }
-                    container.appendChild(div);
-                });
-            });
-        }
-        populateGrid('consonantGrid', consonantGrid, selectedConsonants);
-        populateGrid('vowelGrid', vowelMatrix, selectedVowels);
-
-        // Insert default rules
-        const input = document.querySelector('.tag-input');
-        ['CV', 'CVC', 'VC'].forEach(rule => {
-            phonotacticRules.push(rule);
-            const span = document.createElement('span');
-            span.className = 'tag';
-            span.textContent = rule;
-            const btn = document.createElement('button');
-            btn.textContent = 'x';
-            btn.onclick = () => {
-                span.remove();
-                phonotacticRules = phonotacticRules.filter(p => p !== rule);
-            };
-            span.appendChild(btn);
-            input.parentNode.insertBefore(span, input);
-        });
-
-        // Event listener
-        input.addEventListener('keydown', function (e) {
-            const input = document.querySelector('.tag-input');
-            if ((e.key === ' ' || e.key === 'Enter') && input.innerText.trim() !== '') {
-                e.preventDefault();
-                const value = input.innerText.trim().toUpperCase();
-                if (!phonotacticRules.includes(value)) {
-                    phonotacticRules.push(value);
-                    const span = document.createElement('span');
-                    span.className = 'tag';
-                    span.textContent = value;
-                    const btn = document.createElement('button');
-                    btn.textContent = 'x';
-                    btn.onclick = () => {
-                        span.remove();
-                        phonotacticRules = phonotacticRules.filter(p => p !== value);
-                    };
-                    span.appendChild(btn);
-                    input.parentNode.insertBefore(span, input);
-                }
-                input.innerText = '';
-            }
-        });
-
-        function updateToneOptions() {
-            const count = parseInt(document.getElementById('toneCount').value);
-            const container = document.getElementById('toneOptions');
-            container.innerHTML = '';
-            selectedTones.clear();
-            const toneMap = {
-                '55': '˥', '44': '˦', '33': '˧', '22': '˨', '11': '˩',
-                '53': '˥˧', '31': '˧˩', '51': '˥˩', '13': '˩˧', '35': '˧˥'
-            };
-            for (let i = 0; i < count && i < defaultTones.length; i++) {
-                const toneObj = defaultTones[i];
-                const tone = toneObj.tone;
-
-                const btn = document.createElement('div');
-                btn.className = 'tone-button active';
-
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.checked = true;
-                checkbox.onclick = (e) => {
-                    e.stopPropagation();
-                    btn.classList.toggle('active', checkbox.checked);
-                    const val = span.textContent.trim();
-                    checkbox.checked ? selectedTones.add(val) : selectedTones.delete(val);
-                };
-
-                const span = document.createElement('span');
-                span.textContent = tone;
-                span.contentEditable = true;
-                span.onblur = () => {
-                    const val = span.textContent.trim();
-                    const mapped = toneMap[val] || val;
-                    span.textContent = mapped;
-                    checkbox.checked = true;
-                    btn.classList.add('active');
-                    selectedTones.add(mapped);
-                };
-
-                const desc = document.createElement('span');
-                desc.className = 'tone-description';
-                desc.contentEditable = true;
-                desc.textContent = toneObj.description || '';
-
-                btn.appendChild(checkbox);
-                btn.appendChild(span);
-                btn.appendChild(desc);
-                container.appendChild(btn);
-                selectedTones.add(tone);
-            }
-        }
-        function updateAccentUI() {
-            const type = document.getElementById('accentType').value || 'stress';
-            if (!['stress', 'tone'].includes(type)) return;
-            document.getElementById('stressSettings').style.display = (type === 'stress') ? '' : 'none';
-            const toneSelect = document.getElementById('toneCount')?.parentNode;
-            if (toneSelect) toneSelect.style.display = (type === 'tone') ? '' : 'none';
-            const toneBox = document.getElementById('toneOptions');
-            if (toneBox) toneBox.style.display = (type === 'tone') ? '' : 'none';;
-            if (toneBox) toneBox.style.display = (type === 'tone') ? '' : 'none';
-        }
-        // updateAccentUI();
-        updateToneOptions();
-
-        function generateWord() {
-            const c = Array.from(selectedConsonants);
-            const v = Array.from(selectedVowels);
-            if (!c.length || !v.length || !phonotacticRules.length) return '[Missing elements]';
-
-            const pattern = phonotacticRules[Math.floor(Math.random() * phonotacticRules.length)];
-            const allowClusters = document.getElementById('allowClusters').checked;
-            const onset = document.getElementById('onsetConstraint').value;
-            const nucleus = document.getElementById('nucleusConstraint').value;
-            const coda = document.getElementById('codaConstraint').value;
-            const syllableCount = parseInt(document.getElementById('syllableCount').value) || 1;
-
-            const phoneme = ch => {
-                if (ch === 'C') return c[Math.floor(Math.random() * c.length)] || '';
-                if (ch === 'V') return v[Math.floor(Math.random() * v.length)] || '';
-                return ch;
-            };
-
-            const expandPattern = (patt) => patt.replace(/\(.*?\)/g, (match, group) => Math.random() > 0.5 ? group : '');
-            const buildSyllable = () => {
-                const syl = expandPattern(onset + nucleus + coda);
-                let result = syl.split('').map(phoneme).join('');
-                if (!allowClusters) result = result.replace(/CC+/g, c => c[0]);
-                return result;
-            };
-
-            const syllables = Array.from({ length: syllableCount }, buildSyllable);
-            const accentType = document.getElementById('accentType').value;
-            if (accentType === 'stress' && document.getElementById('enableStress').checked) {
-                const rule = document.getElementById('stressRule').value;
-                let stressIndex = 0;
-                if (rule === 'last') stressIndex = syllables.length - 1;
-                else if (rule === 'penult') stressIndex = Math.max(0, syllables.length - 2);
-                syllables[stressIndex] = 'ˈ' + syllables[stressIndex];
-            }
-            return syllables.join('');
-        }
-        function generateConlang() {
-            const output = document.getElementById('output');
-            let result = `Conlang Type: Experimental\n\n`;
-            if (!selectedConsonants.size || !selectedVowels.size || !phonotacticRules.length) {
-                result += 'Missing consonants, vowels, or rules.';
-                output.textContent = result;
-                return;
-            }
-            result += 'Sample Words:\n';
-            for (let i = 0; i < 20; i++) result += `${generateWord()}\n`;
-            output.textContent = result;
-        }
-    </script>
+    <script src="chance.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
-
-<!-- 
-1. Phonotactics Editor
-• Allow parenthesized specification (C)V means CV and V
-• Add Option to allow/disallow consonant clusters
-• Settings for onset, nucleus, coda constraints
-
-2. Phonological Rules / Sound Changes
-• Rules like final devoicing, nasal assimilation, etc.
-• Could let you define rules in a simple DSL or UI
-• Applies automatically to generated morphemes
-
-3. Stress and Prosody
-• Checkbox for displaying stress or not
-• Add basic stress rules (fixed position, weight-sensitive, lexical)
-• Could display marked stress in generated words
-• Optional: pitch accent/tone interaction (later)
-
-4. Morphology Templates and Generator. Generate morphemes based on:
-• Typology (isolating, agglutinative, etc.): Add real typological flavor:
-• Isolating = single morpheme per word
-• Agglutinative = clean affix stacking
-• Fusional = overlapping/mutated affixes
-• Polysynthetic = generate sentence-words
-• Affix slots (prefix/suffix/infix): User defines affix slots or lets it auto-generate them
-• Grammatical categories (tense, case, number, etc.)
-• Can auto-conjugate using generated stems + affixes
-
-5. Grammar Rule Generation
-• Subject-verb-object order (SVO, SOV, etc.)
-• Agreement rules (none, number, gender)
-• Negation strategy
-• Case system toggle
-
-6. Orthography Designer
-• Toggle between IPA display vs conlang orthography
-• Create your own glyph-to-phoneme mapping
-
-7. Lexicon Expansion
-• Export wordlist with part of speech tags
-• Add semantic fields beyond Swadesh (e.g. emotions, colors, animals)
-• Add semantic fields: colors, numbers, kinship, body parts
-• Allow user to define a seed word and get related words
-• Make word generation reflect basic morphosyntax
-• Could export to .csv or .json eventually
-
-8. WALS
-• These rules auto-populate at load using a realistic cluster from WALS-style patterns
-
-
-
-
--->

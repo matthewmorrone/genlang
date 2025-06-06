@@ -1,0 +1,143 @@
+{
+  "languages": [
+    {
+      "name": "English",
+      "iso": "eng",
+      "wals_code": "eng",
+      "features": {
+        "consonants": ["p", "b", "t", "d", "k", "g", "m", "n", "ŋ", "f", "v", "θ", "ð", "s", "z", "ʃ", "ʒ", "h", "tʃ", "dʒ", "l", "ɹ", "j", "w"],
+        "vowels": ["i", "ɪ", "e", "ɛ", "æ", "ɑ", "ɒ", "ʌ", "ʊ", "u", "ɔ", "ə", "ɜ"],
+        "phoneme_inventory_size": "large",
+        "tone": "no",
+        "stress": "variable",
+        "syllable_structure": "complex",
+        "word_order": "SVO",
+        "morphology": "fusional",
+        "case_marking": "no",
+        "definiteness": "yes",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Mandarin Chinese",
+      "iso": "cmn",
+      "wals_code": "mnd",
+      "features": {
+        "consonants": ["p", "pʰ", "m", "f", "t", "tʰ", "n", "l", "k", "kʰ", "x", "t͡s", "t͡sʰ", "s", "t͡ʂ", "t͡ʂʰ", "ʂ", "ʐ", "t͡ɕ", "t͡ɕʰ", "ɕ", "ʑ"],
+        "vowels": ["i", "y", "u", "ɤ", "o", "ə", "a", "ɚ"],
+        "phoneme_inventory_size": "medium",
+        "tone": "yes",
+        "tone_count": 4,
+        "stress": "none",
+        "syllable_structure": "simple",
+        "word_order": "SVO",
+        "morphology": "isolating",
+        "case_marking": "no",
+        "definiteness": "no",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Finnish",
+      "iso": "fin",
+      "wals_code": "fin",
+      "features": {
+        "consonants": ["p", "b", "t", "d", "k", "g", "m", "n", "ŋ", "f", "v", "s", "h", "l", "r", "j"],
+        "vowels": ["i", "y", "e", "ø", "æ", "a", "o", "u"],
+        "phoneme_inventory_size": "medium",
+        "tone": "no",
+        "stress": "initial",
+        "syllable_structure": "complex",
+        "word_order": "SVO",
+        "morphology": "agglutinative",
+        "case_marking": "yes",
+        "definiteness": "no",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Navajo",
+      "iso": "nav",
+      "wals_code": "nav",
+      "features": {
+        "consonants": ["t", "d", "k", "g", "q", "ʔ", "ts", "dz", "tʃ", "dʒ", "tɬ", "dɮ", "s", "z", "ʃ", "ʒ", "h", "m", "n", "l", "ɬ", "w", "j"],
+        "vowels": ["i", "e", "a", "o", "u", "ą", "ę", "į", "ǫ"],
+        "phoneme_inventory_size": "large",
+        "tone": "yes",
+        "tone_count": 2,
+        "stress": "variable",
+        "syllable_structure": "complex",
+        "word_order": "SOV",
+        "morphology": "polysynthetic",
+        "case_marking": "no",
+        "definiteness": "no",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Turkish",
+      "iso": "tur",
+      "wals_code": "trk",
+      "features": {
+        "consonants": ["b", "c", "ç", "d", "f", "g", "ğ", "h", "j", "k", "l", "m", "n", "p", "r", "s", "ş", "t", "v", "y", "z"],
+        "vowels": ["a", "e", "ı", "i", "o", "ö", "u", "ü"],
+        "phoneme_inventory_size": "medium",
+        "tone": "no",
+        "stress": "final",
+        "syllable_structure": "simple",
+        "word_order": "SOV",
+        "morphology": "agglutinative",
+        "case_marking": "yes",
+        "definiteness": "no",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Japanese",
+      "iso": "jpn",
+      "wals_code": "jpn",
+      "features": {
+        "consonants": ["p", "b", "t", "d", "k", "g", "s", "z", "ɕ", "ʑ", "h", "m", "n", "ɲ", "r", "w", "j"],
+        "vowels": ["a", "i", "u", "e", "o"],
+        "phoneme_inventory_size": "small",
+        "tone": "no",
+        "stress": "none",
+        "syllable_structure": "simple",
+        "word_order": "SOV",
+        "morphology": "agglutinative",
+        "case_marking": "yes",
+        "definiteness": "no",
+        "gender": "no"
+      }
+    },
+    {
+      "name": "Spanish",
+      "iso": "spa",
+      "wals_code": "spa",
+      "features": {
+        "consonants": ["p", "b", "t", "d", "k", "g", "f", "θ", "s", "x", "ʝ", "m", "n", "ɲ", "l", "ʎ", "r", "ɾ", "w"],
+        "vowels": ["a", "e", "i", "o", "u"],
+        "phoneme_inventory_size": "medium",
+        "tone": "no",
+        "stress": "variable",
+        "syllable_structure": "simple",
+        "word_order": "SVO",
+        "morphology": "fusional",
+        "case_marking": "no",
+        "definiteness": "yes",
+        "gender": "yes"
+      }
+    }
+  ],
+  "feature_definitions": {
+    "phoneme_inventory_size": ["small", "medium", "large"],
+    "tone": ["no", "yes"],
+    "stress": ["none", "fixed", "initial", "final", "variable"],
+    "syllable_structure": ["simple", "complex"],
+    "word_order": ["SVO", "SOV", "VSO", "VOS", "OVS", "OSV"],
+    "morphology": ["isolating", "agglutinative", "fusional", "polysynthetic"],
+    "case_marking": ["no", "yes"],
+    "definiteness": ["no", "yes"],
+    "gender": ["no", "yes"]
+  }
+}
